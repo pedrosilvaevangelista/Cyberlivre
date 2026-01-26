@@ -239,6 +239,8 @@ Chegou o momento de integrar tudo: você usará hardware, sistemas, redes e prog
 | 2 | [**Aulões Especiais**](https://youtube.com/playlist?list=PL41yJfzZogTS4aU_3p-DX_KD8JrIJZ7gH) | Guia Anônima | Masterclasses |
 | 3 | [**Metodologias**](https://youtube.com/playlist?list=PL41yJfzZogTQdBU8SbakO7ZmMGygMo0iN) | Guia Anônima | Frameworks e metodologias |
 | 4 | [**Capture The Flag**](https://youtube.com/playlist?list=PL41yJfzZogTQ7y77xUFn2Mzgoh-hizMsv) | Guia Anônima | Competições e desafios |
+| 5 | [**Laboratórios práticos**](https://youtube.com/playlist?list=PLKXxjimG9Fo02XXE1hGoYtvO-hq8YZ8lg&si=AjvSwkAOqPZXaESw) | Douglas Lockshield | Aulas praticas |
+| 6 | [**VIRUS, MALWARES, RANSONWARES E Afins**](https://youtube.com/playlist?list=PLKXxjimG9Fo3MhbfVE5nsuWznK4oUiSrz&si=ZrgF_tUsEzjUOi1J) | Douglas Lockshield | Apresentação de malwares e afins |
 
 ### 📚 **Fundamentos e Cultura**
 
@@ -254,6 +256,7 @@ Chegou o momento de integrar tudo: você usará hardware, sistemas, redes e prog
 | 6 | [**Podcast CTRL+SHIFT+N**](https://youtube.com/playlist?list=PL41yJfzZogTQATpk3nOo3rJJbR6wpJ_Vt) | Guia Anônima | Conversas sobre cybersec |
 | 7 | [**Papo de Hacker**](https://youtube.com/playlist?list=PL41yJfzZogTTYLBnaF-7C73DD8IR1-nlA) | Guia Anônima | Debates com especialistas |
 | 8 | [**Entrevistas com Hackers**](https://youtube.com/playlist?list=PL41yJfzZogTS5St1EwH_QaXf_fcjnYazC) | Guia Anônima | Experiências reais |
+| 9 | [**Dicas e conselhos na area**](https://youtube.com/playlist?list=PLKXxjimG9Fo3RPGXjIJsALz4LHp3lhxCK&si=X7tExgQh3DjG_6AQ) | Douglas Lockshield | Informações Relevantes |
 
 ### 🎓 Cursos Estruturados
 
