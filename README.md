@@ -240,7 +240,7 @@ Chegou o momento de integrar tudo: você usará hardware, sistemas, redes e prog
 | 3 | [**Metodologias**](https://youtube.com/playlist?list=PL41yJfzZogTQdBU8SbakO7ZmMGygMo0iN) | Guia Anônima | Frameworks e metodologias |
 | 4 | [**Capture The Flag**](https://youtube.com/playlist?list=PL41yJfzZogTQ7y77xUFn2Mzgoh-hizMsv) | Guia Anônima | Competições e desafios |
 | 5 | [**Laboratórios práticos**](https://youtube.com/playlist?list=PLKXxjimG9Fo02XXE1hGoYtvO-hq8YZ8lg&si=AjvSwkAOqPZXaESw) | Douglas Lockshield | Aulas praticas |
-| 6 | [**VIRUS, MALWARES, RANSONWARES E Afins**](https://youtube.com/playlist?list=PLKXxjimG9Fo3MhbfVE5nsuWznK4oUiSrz&si=ZrgF_tUsEzjUOi1J) | Douglas Lockshield | Apresentação de malwares e afins |
+| 6 | [**Malwares e afins**](https://youtube.com/playlist?list=PLKXxjimG9Fo3MhbfVE5nsuWznK4oUiSrz&si=ZrgF_tUsEzjUOi1J) | Douglas Lockshield | Apresentação de malwares e afins |
 
 ### 📚 **Fundamentos e Cultura**
 
