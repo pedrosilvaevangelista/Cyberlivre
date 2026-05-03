@@ -620,22 +620,7 @@ body.platform-page {
     color: var(--ink-4);
 }
 
-@media (max-width: 900px) {
-    .dashboard {
-        grid-template-columns: 1fr;
-    }
 
-    .sidebar {
-        height: auto;
-        position: static;
-        border-right: none;
-        border-bottom: 1px solid var(--sidebar-border);
-    }
-
-    .content {
-        padding: 1.5rem;
-    }
-}
 
 /* ─── MODAL ──────────────────────────────────────────────────────────────────── */
 .modal-overlay {
@@ -836,6 +821,79 @@ body.platform-page {
     border: none;
 }
 
+/* ─── HERO BANNERS (INJECTED VIA APP.JS) ─────────────────────────────────────── */
+.hero-banner {
+    background: linear-gradient(135deg, #0c0e1a 0%, #1a1d3a 60%, #0f1627 100%);
+    border-radius: var(--radius-xl);
+    padding: 3rem;
+    margin-bottom: 2rem;
+    position: relative;
+    overflow: hidden;
+    border: 1px solid rgba(67,83,255,0.2);
+}
+.hero-banner.extras {
+    background: linear-gradient(135deg, #0c0e1a 0%, #0f1a2e 60%, #0c0e1a 100%);
+    border: 1px solid rgba(16,185,129,0.2);
+}
+.hero-banner-title {
+    font-size: 2.6rem;
+    font-weight: 900;
+    color: #ffffff;
+    letter-spacing: -1.5px;
+    line-height: 1.15;
+    margin-bottom: 1rem;
+}
+.hero-banner-title.module {
+    font-size: 2.2rem;
+    margin-bottom: 0.75rem;
+}
+.hero-banner-title.extras {
+    font-size: 2rem;
+    margin-bottom: 0.75rem;
+}
+.hero-banner-desc {
+    font-size: 1rem;
+    color: #8892b0;
+    line-height: 1.7;
+    max-width: 560px;
+    margin-bottom: 2rem;
+}
+.hero-banner-desc.module, .hero-banner-desc.extras {
+    font-size: 0.95rem;
+    margin: 0;
+}
+.hero-badge {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    background: rgba(67,83,255,0.15);
+    border: 1px solid rgba(67,83,255,0.3);
+    border-radius: 99px;
+    padding: 0.35rem 1rem;
+    margin-bottom: 1.5rem;
+}
+.hero-badge.extras {
+    background: rgba(16,185,129,0.12);
+    border: 1px solid rgba(16,185,129,0.25);
+}
+.hero-badge span {
+    font-family: var(--font-mono);
+    font-size: 0.65rem;
+    font-weight: 700;
+    color: #a5b4fc;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+}
+.hero-badge.extras span {
+    color: #6ee7b7;
+}
+
+.hero-stats-row {
+    display: flex;
+    gap: 2.5rem;
+    flex-wrap: wrap;
+}
+
 /* ─── RESPONSIVE (DASHBOARD) ─────────────────────────────────────────────────── */
 @media (max-width: 1024px) {
     .dashboard {
@@ -847,19 +905,29 @@ body.platform-page {
         height: auto;
         border-right: none;
         border-bottom: 1px solid var(--sidebar-border);
-        display: flex;
-        flex-direction: column;
+        padding: 1rem 0;
+    }
+    
+    .sidebar-title {
+        margin: 0 1rem 0.5rem;
     }
 
-    .sidebar-menu {
+    .levels-nav {
         display: flex;
+        flex-direction: row;
         overflow-x: auto;
         gap: 0.5rem;
-        padding-bottom: 0.5rem;
+        padding: 0 1rem 1rem 1rem;
         flex-wrap: nowrap;
+        -webkit-overflow-scrolling: touch;
+    }
+    
+    .levels-nav::-webkit-scrollbar {
+        height: 4px;
+        display: none;
     }
 
-    .sidebar-item {
+    .nav-item {
         min-width: max-content;
     }
 
@@ -867,10 +935,8 @@ body.platform-page {
         grid-template-columns: 1fr;
     }
 
-    .module-header {
-        flex-direction: column;
-        align-items: flex-start;
-        gap: 1rem;
+    .content {
+        padding: 1.5rem;
     }
 }
 
@@ -882,14 +948,43 @@ body.platform-page {
     .navbar .container {
         justify-content: center;
     }
-}
-
-@media (max-width: 640px) {
-    .main-content {
+    
+    .hero-banner {
+        padding: 2rem 1.5rem;
+    }
+    .hero-banner-title {
+        font-size: 1.8rem;
+    }
+    .hero-banner-title.module, .hero-banner-title.extras {
+        font-size: 1.5rem;
+    }
+    .hero-stats-row {
+        gap: 1.5rem;
+        flex-direction: column;
+    }
+    .hero-banner-desc {
+        font-size: 0.9rem;
+    }
+    
+    .modal-container {
+        width: 95%;
+        max-height: 90vh;
+        margin-top: 1rem;
+    }
+    .modal-header {
         padding: 1.5rem;
     }
-
-    .module-header h1 {
-        font-size: 1.8rem;
+    .modal-header h2 {
+        font-size: 1.25rem;
+    }
+    .modal-body {
+        padding: 1.5rem;
+    }
+    .modal-footer {
+        padding: 1rem 1.5rem;
+        flex-direction: column;
+    }
+    .modal-footer button {
+        width: 100%;
     }
 }

@@ -104,44 +104,36 @@ function renderLevel(levelId) {
         window.currentLevel = null;
         display.innerHTML = `
             <!-- HERO BANNER -->
-            <div style="
-                background: linear-gradient(135deg, #0c0e1a 0%, #1a1d3a 60%, #0f1627 100%);
-                border-radius: var(--radius-xl);
-                padding: 3rem;
-                margin-bottom: 2rem;
-                position: relative;
-                overflow: hidden;
-                border: 1px solid rgba(67,83,255,0.2);
-            ">
+            <div class="hero-banner">
                 <!-- Glow decoration -->
                 <div style="position:absolute;top:-60px;right:-60px;width:260px;height:260px;background:radial-gradient(circle,rgba(67,83,255,0.18) 0%,transparent 70%);pointer-events:none;"></div>
                 <div style="position:absolute;bottom:-40px;left:10%;width:200px;height:200px;background:radial-gradient(circle,rgba(67,83,255,0.1) 0%,transparent 70%);pointer-events:none;"></div>
 
                 <div style="position:relative;z-index:1;">
-                    <div style="display:inline-flex;align-items:center;gap:0.5rem;background:rgba(67,83,255,0.15);border:1px solid rgba(67,83,255,0.3);border-radius:99px;padding:0.35rem 1rem;margin-bottom:1.5rem;">
+                    <div class="hero-badge">
                         <i data-lucide="shield" style="width:14px;height:14px;color:#7c87ff;"></i>
-                        <span style="font-family:var(--font-mono);font-size:0.65rem;font-weight:700;color:#a5b4fc;letter-spacing:0.1em;text-transform:uppercase;">Plataforma Gratuita de Cibersegurança</span>
+                        <span>Plataforma Gratuita de Cibersegurança</span>
                     </div>
 
-                    <h1 style="font-size:2.6rem;font-weight:900;color:#ffffff;letter-spacing:-1.5px;line-height:1.15;margin-bottom:1rem;">
+                    <h1 class="hero-banner-title">
                         Sua trilha para o<br><span style="background:linear-gradient(90deg,#7c87ff,#a5b4fc);-webkit-background-clip:text;-webkit-text-fill-color:transparent;">mercado de segurança</span>
                     </h1>
-                    <p style="font-size:1rem;color:#8892b0;line-height:1.7;max-width:560px;margin-bottom:2rem;">
+                    <p class="hero-banner-desc">
                         Um currículo estruturado e curado pela comunidade, cobrindo desde os fundamentos de hardware e redes até técnicas avançadas de pentest, forense e cloud security.
                     </p>
 
                     <!-- Stats row -->
-                    <div style="display:flex;gap:2.5rem;flex-wrap:wrap;">
+                    <div class="hero-stats-row">
                         <div>
                             <div style="font-size:1.8rem;font-weight:900;color:#fff;letter-spacing:-1px;font-family:var(--font-mono);">20</div>
                             <div style="font-size:0.72rem;color:#8892b0;font-weight:600;text-transform:uppercase;letter-spacing:0.05em;">Módulos</div>
                         </div>
-                        <div style="width:1px;background:rgba(255,255,255,0.08);"></div>
+                        <div class="stat-divider"></div>
                         <div>
                             <div style="font-size:1.8rem;font-weight:900;color:#fff;letter-spacing:-1px;font-family:var(--font-mono);">100%</div>
                             <div style="font-size:0.72rem;color:#8892b0;font-weight:600;text-transform:uppercase;letter-spacing:0.05em;">Gratuito</div>
                         </div>
-                        <div style="width:1px;background:rgba(255,255,255,0.08);"></div>
+                        <div class="stat-divider"></div>
                         <div>
                             <div style="font-size:1.8rem;font-weight:900;color:#fff;letter-spacing:-1px;font-family:var(--font-mono);">+80</div>
                             <div style="font-size:0.72rem;color:#8892b0;font-weight:600;text-transform:uppercase;letter-spacing:0.05em;">Atividades Práticas</div>
@@ -213,25 +205,17 @@ function renderLevel(levelId) {
         ];
         display.innerHTML = `
             <!-- HERO BANNER EXTRAS -->
-            <div style="
-                background: linear-gradient(135deg, #0c0e1a 0%, #0f1a2e 60%, #0c0e1a 100%);
-                border-radius: var(--radius-xl);
-                padding: 2.5rem 3rem;
-                margin-bottom: 2rem;
-                position: relative;
-                overflow: hidden;
-                border: 1px solid rgba(16,185,129,0.2);
-            ">
+            <div class="hero-banner extras">
                 <div style="position:absolute;top:-60px;right:-40px;width:220px;height:220px;background:radial-gradient(circle,rgba(16,185,129,0.12) 0%,transparent 70%);pointer-events:none;"></div>
                 <div style="position:relative;z-index:1;">
-                    <div style="display:inline-flex;align-items:center;gap:0.5rem;background:rgba(16,185,129,0.12);border:1px solid rgba(16,185,129,0.25);border-radius:99px;padding:0.35rem 1rem;margin-bottom:1.25rem;">
+                    <div class="hero-badge extras">
                         <i data-lucide="folder-open" style="width:14px;height:14px;color:#34d399;"></i>
-                        <span style="font-family:var(--font-mono);font-size:0.65rem;font-weight:700;color:#6ee7b7;letter-spacing:0.1em;text-transform:uppercase;">Biblioteca Complementar</span>
+                        <span>Biblioteca Complementar</span>
                     </div>
-                    <h1 style="font-size:2rem;font-weight:900;color:#ffffff;letter-spacing:-1px;line-height:1.2;margin-bottom:0.75rem;">
+                    <h1 class="hero-banner-title extras">
                         Conteúdos Extras &<br><span style="background:linear-gradient(90deg,#34d399,#6ee7b7);-webkit-background-clip:text;-webkit-text-fill-color:transparent;">Comunidade</span>
                     </h1>
-                    <p style="font-size:0.9rem;color:#8892b0;line-height:1.6;max-width:520px;margin:0;">
+                    <p class="hero-banner-desc extras">
                         Masterclasses, podcasts, conferências e projetos colaborativos que complementam as trilhas e aprofundam sua cultura técnica.
                     </p>
                 </div>
@@ -274,23 +258,15 @@ function renderLevel(levelId) {
 
     display.innerHTML = `
         <!-- MODULE HERO BANNER -->
-        <div style="
-            background: linear-gradient(135deg, #0c0e1a 0%, #1a1d3a 60%, #0f1627 100%);
-            border-radius: var(--radius-xl);
-            padding: 2.5rem 3rem;
-            margin-bottom: 2rem;
-            position: relative;
-            overflow: hidden;
-            border: 1px solid rgba(67,83,255,0.2);
-        ">
+        <div class="hero-banner">
             <div style="position:absolute;top:-60px;right:-60px;width:240px;height:240px;background:radial-gradient(circle,rgba(67,83,255,0.15) 0%,transparent 70%);pointer-events:none;"></div>
             <div style="position:relative;z-index:1;">
-                <div style="display:inline-flex;align-items:center;gap:0.5rem;background:rgba(67,83,255,0.15);border:1px solid rgba(67,83,255,0.3);border-radius:99px;padding:0.35rem 1rem;margin-bottom:1.25rem;">
+                <div class="hero-badge">
                     <i data-lucide="layers" style="width:13px;height:13px;color:#7c87ff;"></i>
-                    <span style="font-family:var(--font-mono);font-size:0.65rem;font-weight:700;color:#a5b4fc;letter-spacing:0.1em;text-transform:uppercase;">Módulo ${String(level.id + 1).padStart(2, '0')}</span>
+                    <span>Módulo ${String(level.id + 1).padStart(2, '0')}</span>
                 </div>
-                <h1 style="font-size:2.2rem;font-weight:900;color:#ffffff;letter-spacing:-1.5px;line-height:1.15;margin-bottom:0.75rem;">${level.title}</h1>
-                <p style="font-size:0.95rem;color:#8892b0;line-height:1.6;max-width:600px;margin:0;">${level.objective}</p>
+                <h1 class="hero-banner-title module">${level.title}</h1>
+                <p class="hero-banner-desc module">${level.objective}</p>
             </div>
         </div>
 
