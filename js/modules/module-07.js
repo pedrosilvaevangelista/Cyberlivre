@@ -2,7 +2,6 @@ window.courseData = window.courseData || [];
 window.courseData.push(// ─── DEFENSIVA ───────────────────────────────────────────────────────────────
     {
         id: 7,
-        category: "Defensiva",
         title: "Fundamentos de Segurança",
         objective: "Compreender a Tríade CIA, modelos de ameaça, gestão de riscos e os principais frameworks da indústria.",
         challenges: [
@@ -54,8 +53,10 @@ window.courseData.push(// ─── DEFENSIVA ───────────�
             }
         ],
         usefulLinks: [
-            { title: "Mitre ATT&CK", url: "https://attack.mitre.org/", desc: "Táticas de adversários" },
-            { title: "OWASP Top 10", url: "https://owasp.org/www-project-top-ten/", desc: "Principais vulnerabilidades web" }
+            { title: "Mitre ATT&CK", url: "https://attack.mitre.org/", desc: "Táticas e técnicas de adversários" },
+            { title: "OWASP Top 10", url: "https://owasp.org/www-project-top-ten/", desc: "Principais vulnerabilidades web" },
+            { title: "NIST CSF", url: "https://www.nist.gov/cyberframework", desc: "Framework global de gestão de riscos" },
+            { title: "Threat Modeling Manifesto", url: "https://www.threatmodelingmanifesto.org/", desc: "Metodologias sobre modelagem de ameaças (STRIDE, etc)" }
         ],
         sections: [
             {

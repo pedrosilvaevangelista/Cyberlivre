@@ -1,8 +1,7 @@
 window.courseData = window.courseData || [];
 window.courseData.push({
         id: 19,
-        category: "Especialização",
-        title: "Currículo & Portfólio",
+        title: "Carreira & Portfólio",
         objective: "Construir um portfólio técnico irrefutável e um currículo otimizado para ATS que posiciona você no mercado.",
         challenges: [
             {
@@ -127,9 +126,10 @@ window.courseData.push({
             }
         ],
         usefulLinks: [
-            { title: "Jake's Resume (Overleaf)", url: "https://www.overleaf.com/latex/templates/jakes-resume/syzfjbndbwxc", desc: "O template padrão-ouro para passar em ATS." },
+            { title: "Overleaf", url: "https://www.overleaf.com/latex/templates/tagged/cv", desc: "Templates de currículos em latex" },
             { title: "Resume Worded", url: "https://resumeworded.com/", desc: "Scanner de ATS gratuito alimentado por IA." },
-            { title: "Dev.to", url: "https://dev.to/", desc: "Plataforma excelente para publicar seus Write-ups." },
+            { title: "Medium", url: "https://medium.com/", desc: "Plataforma excelente para publicar artigos." },
+            { title: "Reddit", url: "https://www.reddit.com/", desc: "Plataforma excelente para publicar seus Write-ups e sanar duvidas." },
             { title: "Markdown Guide", url: "https://www.markdownguide.org/", desc: "Aprenda a formatar o README.md do seu GitHub." }
         ],
         sections: [

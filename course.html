@@ -2,7 +2,7 @@
 <html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
     <title>Plataforma de Estudos | CyberLivre</title>
     <link rel="icon" type="image/png" href="assets/img/icon.png">
     <link rel="stylesheet" href="css/style_course.css">
@@ -13,60 +13,83 @@
     <script src="https://unpkg.com/lucide@latest"></script>
 </head>
 <body class="platform-page">
+
+    <!-- ── NAVBAR ── -->
     <nav class="navbar">
-        <div class="container">
+        <div class="nav-inner">
             <div class="logo-container">
                 <a href="index.html" class="logo-link" title="Voltar ao início">
                     <img src="assets/img/logo.png" alt="CyberLivre Logo" class="logo-img">
                     <span class="logo-text">CyberLivre</span>
-                    <span class="logo-home-badge"><i data-lucide="home"></i></span>
                 </a>
             </div>
             <div class="progress-section">
                 <div class="progress-widget">
-                    <div class="progress-header">
-                        <div class="progress-labels">
-                            <span class="progress-label">Progresso da Trilha</span>
-                            <span id="progress-sub">0 itens concluídos</span>
-                        </div>
+                    <div class="progress-meta">
+                        <span id="progress-sub">0 itens</span>
                         <span id="progress-pct">0%</span>
                     </div>
                     <div class="progress-bar">
-                        <div id="progress-fill" style="width: 0%"></div>
+                        <div id="progress-fill" style="width:0%"></div>
                     </div>
                 </div>
             </div>
         </div>
     </nav>
 
-    <main class="container-fluid">
-        <div class="dashboard">
-            <aside class="sidebar">
-                <div class="sidebar-header">
-                    <div class="sidebar-title">Trilha de Aprendizado</div>
-                </div>
-                <nav class="levels-nav" id="levels-nav">
-                    <!-- Nav items injected by JS -->
-                </nav>
-            </aside>
-            
-            <section class="content" id="main-content">
-                <div id="level-display" class="level-display">
-                    <!-- Level content injected by JS -->
-                </div>
-            </section>
-        </div>
-    </main>
+    <!-- ── SIDEBAR OVERLAY (mobile) ── -->
+    <div class="sidebar-overlay" id="sidebar-overlay" onclick="closeSidebar()"></div>
 
-    <!-- Challenge Modal -->
-    <div id="challenge-modal" class="modal-overlay">
+    <!-- ── LAYOUT ── -->
+    <div class="layout">
+        <aside class="sidebar" id="sidebar">
+            <div class="sidebar-header">
+                <span class="sidebar-title">Trilha de Aprendizado</span>
+                <button class="sidebar-close-btn" onclick="closeSidebar()" aria-label="Fechar menu">
+                    <i data-lucide="x"></i>
+                </button>
+            </div>
+            <nav class="levels-nav" id="levels-nav">
+                <!-- Nav items injected by JS -->
+            </nav>
+        </aside>
+
+        <main class="content" id="main-content">
+            <div id="level-display" class="level-display">
+                <!-- Level content injected by JS -->
+            </div>
+        </main>
+    </div>
+
+    <!-- ── BOTTOM NAV (mobile) ── -->
+    <nav class="bottom-nav" id="bottom-nav" aria-label="Navegação principal">
+        <button class="bnav-btn active" id="bnav-home"
+            onclick="selectAndNav('intro','bnav-home')">
+            <i data-lucide="home"></i>
+            <span>Início</span>
+        </button>
+        <button class="bnav-btn" id="bnav-modules"
+            onclick="openSidebar(); setActiveBnav('bnav-modules')">
+            <i data-lucide="layers"></i>
+            <span>Módulos</span>
+        </button>
+        <button class="bnav-btn" id="bnav-extras"
+            onclick="selectAndNav('extras','bnav-extras')">
+            <i data-lucide="folder-plus"></i>
+            <span>Extras</span>
+        </button>
+    </nav>
+
+    <!-- ── CHALLENGE MODAL ── -->
+    <div id="challenge-modal" class="modal-overlay" role="dialog" aria-modal="true" aria-labelledby="modal-title">
         <div class="modal-container">
+            <div class="modal-drag-handle"></div>
             <div class="modal-header">
                 <div class="modal-title-group">
                     <span class="badge-challenge">Desafio Prático</span>
                     <h2 id="modal-title">Título do Desafio</h2>
                 </div>
-                <button class="btn-close-modal" onclick="window.closeChallenge()">
+                <button class="btn-close-modal" onclick="window.closeChallenge()" aria-label="Fechar">
                     <i data-lucide="x"></i>
                 </button>
             </div>
@@ -81,5 +104,45 @@
     </div>
 
     <script src="js/app.js?v=3"></script>
+    <script>
+        /* ── SIDEBAR TOGGLE ── */
+        function openSidebar() {
+            document.getElementById('sidebar').classList.add('open');
+            document.getElementById('sidebar-overlay').classList.add('active');
+            document.body.style.overflow = 'hidden';
+        }
+        function closeSidebar() {
+            document.getElementById('sidebar').classList.remove('open');
+            document.getElementById('sidebar-overlay').classList.remove('active');
+            document.body.style.overflow = '';
+        }
+
+        /* ── BOTTOM NAV ── */
+        function setActiveBnav(id) {
+            document.querySelectorAll('.bnav-btn').forEach(b => b.classList.remove('active'));
+            const el = document.getElementById(id);
+            if (el) el.classList.add('active');
+        }
+        function selectAndNav(levelId, bnavId) {
+            closeSidebar();
+            setActiveBnav(bnavId);
+            window.selectLevel(levelId);
+        }
+
+        /* ── DESKTOP: always show sidebar ── */
+        const mq = window.matchMedia('(min-width: 768px)');
+        function handleMQ(e) {
+            const sidebar = document.getElementById('sidebar');
+            const overlay = document.getElementById('sidebar-overlay');
+            if (e.matches) {
+                // desktop — force open, remove mobile overlay
+                sidebar.classList.add('open');
+                overlay.classList.remove('active');
+                document.body.style.overflow = '';
+            }
+        }
+        mq.addEventListener('change', handleMQ);
+        handleMQ(mq);
+    </script>
 </body>
 </html>

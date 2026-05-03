@@ -68,7 +68,9 @@ window.courseData.push({
             }
         ],
         usefulLinks: [
-            { title: "Subnet Calculator", url: "https://www.subnet-calculator.com/", desc: "Cálculo de IPs" },
+            { title: "Calculadora de subredes IPv4", url: "https://www.site24x7.com/es/tools/ipv4-subredes-calculadora.html", desc: "Cálculo de IPs" },
+            { title: "Ping.eu", url: "https://ping.eu", desc: "ping, traceroute, DNS lookup, WHOIS, verificação de portas, tudo em um" },
+            
         ],
         sections: [
             {

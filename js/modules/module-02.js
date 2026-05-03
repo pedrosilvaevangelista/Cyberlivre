@@ -45,7 +45,9 @@ window.courseData.push({
         ],
         usefulLinks: [
             { title: "VirtualBox", url: "https://www.virtualbox.org/", desc: "Hypervisor gratuito" },
-            { title: "Docker", url: "https://www.docker.com/", desc: "Containerização de aplicações e serviços" }
+            { title: "Docker", url: "https://www.docker.com/", desc: "Containerização de aplicações e serviços" },
+            { title: "Play with Docker", url: "https://labs.play-with-docker.com/", desc: "Laboratório Docker gratuito no navegador" },
+            { title: "Proxmox VE", url: "https://www.proxmox.com/en/proxmox-virtual-environment/overview", desc: "Plataforma de virtualização Open Source nível enterprise" }
         ],
         sections: [
             {

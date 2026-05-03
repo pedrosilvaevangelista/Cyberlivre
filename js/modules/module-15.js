@@ -1,8 +1,7 @@
 window.courseData = window.courseData || [];
 window.courseData.push({
         id: 15,
-        category: "Ofensiva",
-        title: "Active Directory",
+        title: "Pentest Interno & AD",
         objective: "Entender, explorar e defender ambientes corporativos Windows com Active Directory e Kerberos.",
         challenges: [
             {

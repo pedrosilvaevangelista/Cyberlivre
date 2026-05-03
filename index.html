@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
     <title>CyberLivre | Formação em Cibersegurança Gratuita</title>
     <link rel="icon" type="image/png" href="assets/img/icon.png">
     <link rel="stylesheet" href="css/style.css">
@@ -32,8 +32,21 @@
                 <a href="#colaborar">Colaborar</a>
                 <a href="course.html" class="btn-cta">Começar Agora</a>
             </div>
+            <!-- Hamburger (mobile only) -->
+            <button class="hamburger" id="hamburger" aria-label="Abrir menu" aria-expanded="false">
+                <span></span><span></span><span></span>
+            </button>
         </div>
     </nav>
+
+    <!-- Mobile Navigation Drawer -->
+    <div class="mobile-nav-drawer" id="mobile-drawer" aria-hidden="true">
+        <a href="#como-funciona" onclick="closeDrawer()">Metodologia</a>
+        <a href="#curriculo" onclick="closeDrawer()">Currículo</a>
+        <a href="#quem-somos" onclick="closeDrawer()">Quem Somos</a>
+        <a href="#colaborar" onclick="closeDrawer()">Colaborar</a>
+        <a href="course.html" class="btn-cta-mobile">Começar Agora →</a>
+    </div>
 
     <header class="home-hero" id="home-page">
         <div class="container">
@@ -256,7 +269,7 @@
             <div class="footer-grid-final">
                 <div class="footer-brand">
                     <div class="logo-container">
-                        <img src="assets/img/icon.png" alt="Logo" height="80">
+                        <img src="assets/img/icon.png" alt="Logo" class="footer-logo-img">
                         <span class="logo-text">CyberLivre</span>
                     </div>
                     <p>Formando os novos guardiões da internet brasileira. Uma iniciativa aberta e comunitária para a
@@ -287,6 +300,33 @@
 
     <script>
         lucide.createIcons();
+
+        /* ── HAMBURGER MENU ── */
+        const hamburger = document.getElementById('hamburger');
+        const drawer = document.getElementById('mobile-drawer');
+
+        hamburger.addEventListener('click', () => {
+            const isOpen = drawer.classList.toggle('open');
+            hamburger.classList.toggle('open', isOpen);
+            hamburger.setAttribute('aria-expanded', isOpen);
+            drawer.setAttribute('aria-hidden', !isOpen);
+            document.body.style.overflow = isOpen ? 'hidden' : '';
+        });
+
+        function closeDrawer() {
+            drawer.classList.remove('open');
+            hamburger.classList.remove('open');
+            hamburger.setAttribute('aria-expanded', 'false');
+            drawer.setAttribute('aria-hidden', 'true');
+            document.body.style.overflow = '';
+        }
+
+        // Fecha ao clicar fora
+        document.addEventListener('click', (e) => {
+            if (!drawer.contains(e.target) && !hamburger.contains(e.target)) {
+                closeDrawer();
+            }
+        });
     </script>
 </body>
 

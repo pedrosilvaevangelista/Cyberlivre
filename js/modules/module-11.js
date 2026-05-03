@@ -1,8 +1,7 @@
 window.courseData = window.courseData || [];
 window.courseData.push({
         id: 11,
-        category: "Defensiva",
-        title: "Compliance & Frameworks",
+        title: "Governança & GRC",
         objective: "Aplicar LGPD, ISO 27001, NIST CSF e CIS Controls para transformar requisitos regulatórios em controles técnicos.",
         challenges: [
             {

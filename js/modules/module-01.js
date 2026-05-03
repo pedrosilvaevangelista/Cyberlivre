@@ -77,7 +77,8 @@ window.courseData.push({
         usefulLinks: [
             { title: "Linux Journey", url: "https://linuxjourney.com/", desc: "Guia interativo de Linux" },
             { title: "ExplainShell", url: "https://explainshell.com/", desc: "Entenda comandos de terminal" },
-            { title: "Foca Linux", url: "https://guiafoca.org/", desc: "Guia completo de Linux" }
+            { title: "Foca Linux", url: "https://guiafoca.org/", desc: "Guia completo de Linux" },
+            { title: "OverTheWire: Bandit", url: "https://overthewire.org/wargames/bandit/", desc: "Aprenda comandos de Linux jogando (Wargame clássico)" }
         ],
         sections: [
             {

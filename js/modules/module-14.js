@@ -1,7 +1,6 @@
 window.courseData = window.courseData || [];
 window.courseData.push({
         id: 14,
-        category: "Ofensiva",
         title: "Pentest Web",
         objective: "Identificar e explorar vulnerabilidades web (OWASP Top 10) com Burp Suite, FFUF e técnicas manuais.",
         challenges: [
@@ -54,7 +53,9 @@ window.courseData.push({
         ],
         usefulLinks: [
             { title: "OWASP Top 10", url: "https://owasp.org/www-project-top-ten/", desc: "Principais vulnerabilidades web" },
-            { title: "PortSwigger Labs", url: "https://portswigger.net/web-security", desc: "Labs de web hacking" }
+            { title: "PortSwigger Labs", url: "https://portswigger.net/web-security", desc: "Labs gratuitos focados em Web AppSec" },
+            { title: "HackTheBox", url: "https://www.hackthebox.com/", desc: "Laboratórios práticos de pentest e CTF" },
+            { title: "TryHackMe", url: "https://tryhackme.com/", desc: "Plataforma amigável para aprender cibersegurança" }
         ],
         sections: [
             {

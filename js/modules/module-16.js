@@ -1,7 +1,6 @@
 window.courseData = window.courseData || [];
 window.courseData.push({
         id: 16,
-        category: "Ofensiva",
         title: "Análise de Malware",
         objective: "Analisar comportamentos maliciosos via análise estática (PE headers, strings) e dinâmica (sandboxing, ProcMon).",
         challenges: [

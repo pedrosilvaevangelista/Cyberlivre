@@ -52,7 +52,6 @@ window.courseData.push({
             }
         ],
         usefulLinks: [
-            { title: "SQLiteOnline", url: "https://sqliteonline.com/", desc: "Banco de dados no navegador" },
             { title: "SQLZoo", url: "https://sqlzoo.net/", desc: "Exercícios interativos de SQL" }
         ],
         sections: [

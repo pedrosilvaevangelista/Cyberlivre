@@ -1,8 +1,7 @@
 window.courseData = window.courseData || [];
 window.courseData.push({
         id: 12,
-        category: "Defensiva",
-        title: "Criptografia",
+        title: "Criptografia Básica",
         objective: "Entender criptografia simétrica, assimétrica, hashing, TLS e PKI aplicados à proteção de dados.",
         challenges: [
             {

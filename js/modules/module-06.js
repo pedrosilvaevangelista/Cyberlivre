@@ -1,8 +1,7 @@
 window.courseData = window.courseData || [];
 window.courseData.push({
         id: 6,
-        category: "Fundamentos",
-        title: "Soft Skills",
+        title: "Cultura Hacker",
         objective: "Desenvolver comunicação técnica, redação de relatórios e posicionamento profissional em cibersegurança.",
         challenges: [
             {
@@ -61,12 +60,10 @@ window.courseData.push({
                 name: "Vídeos e Playlists",
                 icon: "play-circle",
                 resources: [
-                    { id: "s01", title: "Aulas de Filosofia", channel: "Isto não é Filosofia", desc: "Pensamento crítico e análise lógica", url: "https://youtube.com/playlist?list=PLhuwT6UtzNbnkUlRUZvY6DBgr9LInBtrZ" },
                     { id: "s04", title: "Comunicação e Oratória", channel: "El Professor da Oratória", desc: "Desenvolvimento da comunicação verbal", url: "https://youtube.com/playlist?list=PLF0WnKFaIjV2s2-vU2up7-cqpOACSx73v" },
                     { id: "s05", title: "Networking Profissional", channel: "Jovens de Negócios", desc: "Relacionamentos estratégicos", url: "https://youtu.be/jr8rv8JCcI0" },
                     { id: "s06", title: "Construção da Identidade", channel: "Projeto Cão Pastor", desc: "Autoconhecimento e desenvolvimento", url: "https://youtube.com/playlist?list=PLwinAdFkfTrVLsK1yBMkmf8SkTg-aR7r-" },
                     { id: "s07", title: "Performance e Foco", channel: "Projeto Cão Pastor", desc: "Disciplina e alta performance", url: "https://youtube.com/playlist?list=PLwinAdFkfTrU2l2iQuvw6U-n2xTdDWUZZ" },
-                    { id: "s08", title: "Filosofia Aplicada", channel: "Clóvis de Barros Filho", desc: "Ética e reflexões práticas", url: "https://youtube.com/playlist?list=PLN50oHosyDdg4P68_1pzRMqHpUnSfJGEF" }
                 ]
             },
             {

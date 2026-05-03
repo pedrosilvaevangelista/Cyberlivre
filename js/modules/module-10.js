@@ -1,7 +1,6 @@
 window.courseData = window.courseData || [];
 window.courseData.push({
         id: 10,
-        category: "Defensiva",
         title: "Forense Digital",
         objective: "Coletar e analisar evidências digitais de incidentes com integridade forense e cadeia de custódia.",
         challenges: [
@@ -54,8 +53,9 @@ window.courseData.push({
             }
         ],
         usefulLinks: [
-            { title: "Autopsy", url: "https://www.autopsy.com/", desc: "Ferramenta de análise forense" },
-            { title: "CyberDefenders", url: "https://cyberdefenders.org/", desc: "Labs de forense e blue team" }
+            { title: "Autopsy", url: "https://www.autopsy.com/", desc: "Ferramenta de análise forense open-source" },
+            { title: "Volatility", url: "https://volatilityfoundation.org/", desc: "Framework para forense de memória RAM" },
+            { title: "SANS DFIR", url: "https://www.sans.org/posters/", desc: "Cheat sheets essenciais para Resposta a Incidentes" }
         ],
         sections: [
             {

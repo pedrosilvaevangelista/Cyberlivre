@@ -1,8 +1,7 @@
 window.courseData = window.courseData || [];
 window.courseData.push({
         id: 8,
-        category: "Defensiva",
-        title: "Endpoint & Hardening",
+        title: "Hardening & Defesa",
         objective: "Proteger dispositivos Windows e Linux com hardening, EDR, gestão de patches e controle de aplicações.",
         challenges: [
             {
@@ -55,7 +54,8 @@ window.courseData.push({
         ],
         usefulLinks: [
             { title: "CIS Benchmarks", url: "https://www.cisecurity.org/cis-benchmarks/", desc: "Guias de hardening por SO" },
-            { title: "Lynis", url: "https://cisofy.com/lynis/", desc: "Auditor de segurança Linux" }
+            { title: "Lynis", url: "https://cisofy.com/lynis/", desc: "Auditor de segurança Linux" },
+            { title: "nessus", url: "https://pt-br.tenable.com/products/nessus", desc: "Auditoria de vulnerabilidades" }
         ],
         sections: [
             {
@@ -70,8 +70,7 @@ window.courseData.push({
                 icon: "graduation-cap",
                 resources: [
                     { id: "secc04", title: "Endpoint Security", channel: "Cisco NetAcad", desc: "Proteção de dispositivos", url: "https://www.netacad.com/pt/courses/endpoint-security" },
-                    { id: "secc05", title: "Network Defense", channel: "Cisco NetAcad", desc: "Defesa de redes", url: "https://www.netacad.com/pt/courses/network-defense" }
-                ]
+                    { id: "secc05", title: "Network Defense", channel: "Cisco NetAcad", desc: "Defesa de redes", url: "https://www.netacad.com/pt/courses/network-defense" },                ]
             }
         ]
     });

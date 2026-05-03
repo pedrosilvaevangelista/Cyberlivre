@@ -1,7 +1,6 @@
 window.courseData = window.courseData || [];
 window.courseData.push({
         id: 9,
-        category: "Defensiva",
         title: "SOC & SIEM",
         objective: "Monitorar, detectar e responder a incidentes em tempo real usando SIEMs como Wazuh, Splunk e Elastic.",
         challenges: [
@@ -73,7 +72,9 @@ window.courseData.push({
         usefulLinks: [
             { title: "Wazuh Docs", url: "https://documentation.wazuh.com/", desc: "Documentação oficial do Wazuh" },
             { title: "Elastic SIEM", url: "https://www.elastic.co/security", desc: "Stack ELK para SOC" },
-            { title: "DFIR Iris", url: "https://dfir-iris.org/", desc: "Plataforma de Incident Response" }
+            { title: "DFIR Iris", url: "https://dfir-iris.org/", desc: "Plataforma de Incident Response" },
+            { title: "Sigma Rules", url: "https://github.com/SigmaHQ/sigma", desc: "Formato genérico de assinaturas para SIEM" },
+            { title: "Shuffle", url: "https://shuffler.io/", desc: "Plataforma Open Source de orquestração (SOAR)" }
         ],
         sections: [
             {

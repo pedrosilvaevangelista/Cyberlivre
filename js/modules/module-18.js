@@ -2,7 +2,6 @@ window.courseData = window.courseData || [];
 window.courseData.push(// ─── ESPECIALIZAÇÃO ──────────────────────────────────────────────────────────
     {
         id: 18,
-        category: "Especialização",
         title: "Cloud Security",
         objective: "Entender riscos, IAM, configuração segura e auditoria de infraestrutura em AWS, Azure e GCP.",
         challenges: [

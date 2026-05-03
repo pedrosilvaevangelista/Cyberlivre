@@ -398,6 +398,24 @@ window.closeChallenge = () => {
 
 window.selectLevel = (id) => {
     renderLevel(id);
+    
+    // Rola a sidebar até o item ativo (útil no desktop ou mobile alto)
+    const activeNavItem = document.getElementById(`nav-${id}`);
+    if (activeNavItem) {
+        activeNavItem.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
+    }
+
+    // Fecha sidebar no mobile após navegar
+    const sidebar = document.getElementById('sidebar');
+    const overlay = document.getElementById('sidebar-overlay');
+    if (sidebar && window.innerWidth < 768) {
+        sidebar.classList.remove('open');
+        if (overlay) overlay.classList.remove('active');
+        document.body.style.overflow = '';
+    }
+    // Rola o conteúdo principal ao topo
+    const main = document.getElementById('main-content');
+    if (main) main.scrollTo({ top: 0, behavior: 'smooth' });
     window.scrollTo({ top: 0, behavior: 'smooth' });
 };
 

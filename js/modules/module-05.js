@@ -1,7 +1,6 @@
 window.courseData = window.courseData || [];
 window.courseData.push({
         id: 5,
-        category: "Fundamentos",
         title: "Programação",
         objective: "Desenvolver automação e ferramentas de segurança com Python e Bash para escalar operações.",
         challenges: [
@@ -57,7 +56,8 @@ window.courseData.push({
         usefulLinks: [
             { title: "Python Cheatsheet", url: "https://www.pythoncheatsheet.org/", desc: "Referência rápida" },
             { title: "Stack Overflow", url: "https://stackoverflow.com/", desc: "Fórum para dúvidas" },
-            { title: "Codewars", url: "https://www.codewars.com/", desc: "Desafios de lógica" }
+            { title: "Codewars", url: "https://www.codewars.com/", desc: "Desafios de lógica gamificados" },
+            { title: "Regex101", url: "https://regex101.com/", desc: "Crie, teste e entenda Expressões Regulares (Regex)" }
         ],
         sections: [
             {

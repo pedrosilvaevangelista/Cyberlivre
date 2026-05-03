@@ -1,7 +1,6 @@
 window.courseData = window.courseData || [];
 window.courseData.push({
         id: 17,
-        category: "Ofensiva",
         title: "Engenharia Social",
         objective: "Compreender e simular ataques de manipulação humana: phishing, pretexting e campanhas de conscientização.",
         challenges: [

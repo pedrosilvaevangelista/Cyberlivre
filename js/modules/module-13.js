@@ -2,7 +2,6 @@ window.courseData = window.courseData || [];
 window.courseData.push(// ─── OFENSIVA ────────────────────────────────────────────────────────────────
     {
         id: 13,
-        category: "Ofensiva",
         title: "Recon & OSINT",
         objective: "Coletar inteligência sobre alvos usando fontes abertas: Shodan, Maltego, TheHarvester e Google Dorks.",
         challenges: [
@@ -87,7 +86,9 @@ window.courseData.push(// ─── OFENSIVA ───────────�
         ],
         usefulLinks: [
             { title: "OSINT Framework", url: "https://osintframework.com/", desc: "Mapa de ferramentas OSINT" },
-            { title: "Shodan", url: "https://www.shodan.io/", desc: "Busca de dispositivos conectados" }
+            { title: "Shodan", url: "https://www.shodan.io/", desc: "Busca de dispositivos conectados" },
+            { title: "Exploit-DB (GHDB)", url: "https://www.exploit-db.com/google-hacking-database", desc: "Google Hacking Database (Dorks)" },
+            { title: "Have I Been Pwned", url: "https://haveibeenpwned.com/", desc: "Consulta de vazamento de dados" }
         ],
         sections: [
             {
