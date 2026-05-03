@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Plataforma de Estudos | CyberLivre</title>
+    <link rel="icon" type="image/png" href="assets/img/icon.png">
+    <link rel="stylesheet" href="css/style_course.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Sora:wght@400;600;700;800&family=JetBrains+Mono:wght@500;700&display=swap" rel="stylesheet">
+    <!-- Lucide Icons -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+</head>
+<body class="platform-page">
+    <nav class="navbar">
+        <div class="container">
+            <div class="logo-container">
+                <a href="index.html" class="logo-link" title="Voltar ao início">
+                    <img src="assets/img/logo.png" alt="CyberLivre Logo" class="logo-img">
+                    <span class="logo-text">CyberLivre</span>
+                    <span class="logo-home-badge"><i data-lucide="home"></i></span>
+                </a>
+            </div>
+            <div class="progress-section">
+                <div class="progress-widget">
+                    <div class="progress-header">
+                        <div class="progress-labels">
+                            <span class="progress-label">Progresso da Trilha</span>
+                            <span id="progress-sub">0 itens concluídos</span>
+                        </div>
+                        <span id="progress-pct">0%</span>
+                    </div>
+                    <div class="progress-bar">
+                        <div id="progress-fill" style="width: 0%"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <main class="container-fluid">
+        <div class="dashboard">
+            <aside class="sidebar">
+                <div class="sidebar-header">
+                    <div class="sidebar-title">Trilha de Aprendizado</div>
+                </div>
+                <nav class="levels-nav" id="levels-nav">
+                    <!-- Nav items injected by JS -->
+                </nav>
+            </aside>
+            
+            <section class="content" id="main-content">
+                <div id="level-display" class="level-display">
+                    <!-- Level content injected by JS -->
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <!-- Challenge Modal -->
+    <div id="challenge-modal" class="modal-overlay">
+        <div class="modal-container">
+            <div class="modal-header">
+                <div class="modal-title-group">
+                    <span class="badge-challenge">Desafio Prático</span>
+                    <h2 id="modal-title">Título do Desafio</h2>
+                </div>
+                <button class="btn-close-modal" onclick="window.closeChallenge()">
+                    <i data-lucide="x"></i>
+                </button>
+            </div>
+            <div class="modal-body" id="modal-content">
+                <!-- Conteúdo injetado via JS -->
+            </div>
+            <div class="modal-footer">
+                <button class="btn-secondary" onclick="window.closeChallenge()">Fechar</button>
+                <button class="btn-primary" id="btn-complete-challenge">Marcar como Concluído</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="js/app.js?v=3"></script>
+</body>
+</html>
