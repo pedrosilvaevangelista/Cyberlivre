@@ -192,6 +192,7 @@ a {
     background: var(--indigo);
     box-shadow: var(--shadow-brand);
     transform: translateY(-1px);
+    color: white;
 }
 
 /* ── HAMBURGER MENU ── */
