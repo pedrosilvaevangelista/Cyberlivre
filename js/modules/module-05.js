@@ -1,6 +1,6 @@
 window.courseData = window.courseData || [];
 window.courseData.push({
-        id: 5,
+        id: 6,
         title: "Programação",
         objective: "Desenvolver automação e ferramentas de segurança com Python e Bash para escalar operações.",
         challenges: [
@@ -93,3 +93,4 @@ window.courseData.push({
             }
         ]
     });
+

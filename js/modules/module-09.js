@@ -1,6 +1,6 @@
 window.courseData = window.courseData || [];
 window.courseData.push({
-        id: 9,
+        id: 14,
         title: "SOC & SIEM",
         objective: "Monitorar, detectar e responder a incidentes em tempo real usando SIEMs como Wazuh, Splunk e Elastic.",
         challenges: [
@@ -89,3 +89,4 @@ window.courseData.push({
             }
         ]
     });
+

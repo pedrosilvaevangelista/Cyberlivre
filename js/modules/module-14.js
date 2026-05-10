@@ -1,6 +1,6 @@
 window.courseData = window.courseData || [];
 window.courseData.push({
-        id: 14,
+        id: 11,
         title: "Pentest Web",
         objective: "Identificar e explorar vulnerabilidades web (OWASP Top 10) com Burp Suite, FFUF e técnicas manuais.",
         challenges: [
@@ -55,7 +55,8 @@ window.courseData.push({
             { title: "OWASP Top 10", url: "https://owasp.org/www-project-top-ten/", desc: "Principais vulnerabilidades web" },
             { title: "PortSwigger Labs", url: "https://portswigger.net/web-security", desc: "Labs gratuitos focados em Web AppSec" },
             { title: "HackTheBox", url: "https://www.hackthebox.com/", desc: "Laboratórios práticos de pentest e CTF" },
-            { title: "TryHackMe", url: "https://tryhackme.com/", desc: "Plataforma amigável para aprender cibersegurança" }
+            { title: "TryHackMe", url: "https://tryhackme.com/", desc: "Plataforma amigável para aprender cibersegurança" },
+            { title: "OWASP WSTG - SQLi", url: "https://owasp.org/www-project-web-security-testing-guide/latest/4-Web_Application_Security_Testing/07-Input_Validation_Testing/05-Testing_for_SQL_Injection", desc: "Guia oficial de testes de injeção SQL da OWASP" }
         ],
         sections: [
             {
@@ -63,7 +64,9 @@ window.courseData.push({
                 icon: "play-circle",
                 resources: [
                     { id: "sec03", title: "Vulnerabilidades Web", channel: "Guia Anônima", desc: "Exploração de falhas", url: "https://youtube.com/playlist?list=PL41yJfzZogTT3oxNQAJCt-UHWRvUhlyLn" },
-                    { id: "sec04", title: "Ferramentas de Pentest", channel: "Guia Anônima", desc: "Arsenal do pentester", url: "https://youtube.com/playlist?list=PL41yJfzZogTSAr0-7XPFv-XvKoxCsEz9Y" }
+                    { id: "sec04", title: "Ferramentas de Pentest", channel: "Guia Anônima", desc: "Arsenal do pentester", url: "https://youtube.com/playlist?list=PL41yJfzZogTSAr0-7XPFv-XvKoxCsEz9Y" },
+                    { id: "solyd_pentest", title: "Introdução ao Hacking e Pentest 2.0", channel: "Solyd Offensive Security", desc: "Curso abordando a mentalidade ofensiva e os fundamentos de exploração.", url: "https://youtube.com/playlist?list=PLp95aw034Wn8Wi0NViVF58hOpX-m00jyg&si=BdaJyGqCrVqpSNOV" },
+                    { id: "ctf_guia_anonima", title: "Laboratórios CTF - TryHackMe", channel: "Guia Anônima", desc: "Resoluções guiadas de máquinas do TryHackMe, focadas na exploração prática.", url: "https://youtube.com/playlist?list=PLzJijuF5TMYQ23lzOOKR2VPV9wVmD8Z7h&si=1Gt0kvjCP_agZ9id" }
                 ]
             },
             {
@@ -75,3 +78,4 @@ window.courseData.push({
             }
         ]
     });
+

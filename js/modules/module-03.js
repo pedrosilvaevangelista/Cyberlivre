@@ -1,6 +1,6 @@
 window.courseData = window.courseData || [];
 window.courseData.push({
-        id: 3,
+        id: 2,
         title: "Redes",
         objective: "Dominar o modelo OSI, TCP/IP, protocolos essenciais e análise de tráfego com Wireshark.",
         challenges: [
@@ -94,3 +94,4 @@ window.courseData.push({
             }
         ]
     });
+

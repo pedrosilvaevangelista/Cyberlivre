@@ -1,6 +1,6 @@
 window.courseData = window.courseData || [];
 window.courseData.push({
-        id: 11,
+        id: 18,
         title: "Governança & GRC",
         objective: "Aplicar LGPD, ISO 27001, NIST CSF e CIS Controls para transformar requisitos regulatórios em controles técnicos.",
         challenges: [
@@ -84,7 +84,8 @@ window.courseData.push({
         ],
         usefulLinks: [
             { title: "NIST CSF", url: "https://www.nist.gov/cyberframework", desc: "Framework de segurança NIST" },
-            { title: "LGPD", url: "https://www.planalto.gov.br/ccivil_03/_ato2015-2018/2018/lei/l13709.htm", desc: "Lei Geral de Proteção de Dados" }
+            { title: "LGPD", url: "https://www.planalto.gov.br/ccivil_03/_ato2015-2018/2018/lei/l13709.htm", desc: "Lei Geral de Proteção de Dados" },
+            { title: "NIST SP 800-63B", url: "https://nvlpubs.nist.gov/nistpubs/SpecialPublications/NIST.SP.800-63b.pdf", desc: "Diretrizes de Autenticação Digital" }
         ],
         sections: [
             {
@@ -96,3 +97,4 @@ window.courseData.push({
             }
         ]
     });
+

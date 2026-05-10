@@ -1,7 +1,7 @@
 window.courseData = window.courseData || [];
 window.courseData.push(// ─── OFENSIVA ────────────────────────────────────────────────────────────────
     {
-        id: 13,
+        id: 10,
         title: "Recon & OSINT",
         objective: "Coletar inteligência sobre alvos usando fontes abertas: Shodan, Maltego, TheHarvester e Google Dorks.",
         challenges: [
@@ -96,8 +96,10 @@ window.courseData.push(// ─── OFENSIVA ───────────�
                 icon: "play-circle",
                 resources: [
                     { id: "sec02", title: "Guia Anônima - Base", channel: "Guia Anônima", desc: "Fundamentos de hacking e recon", url: "https://youtube.com/playlist?list=PL41yJfzZogTTjujd-d2WNXTLgfk3HcJ7-" },
-                    { id: "sec15c", title: "OS para Hackers", channel: "Guia Anônima", desc: "Sistemas especializados", url: "https://youtube.com/playlist?list=PL41yJfzZogTT4rlCNSdHP5ixv3sQxedKA" }
+                    { id: "sec15c", title: "OS para Hackers", channel: "Guia Anônima", desc: "Sistemas especializados", url: "https://youtube.com/playlist?list=PL41yJfzZogTT4rlCNSdHP5ixv3sQxedKA" },
+                    { id: "osint_bruno_fraga", title: "Investigação Digital e OSINT", channel: "Bruno Fraga", desc: "Técnicas avançadas de rastreamento, inteligência em fontes abertas e investigação cibernética.", url: "https://youtube.com/playlist?list=PL3q2xAxCvADm0ihDxIdutf8mLZsn-lcCY&si=LZ2zCCb_0B8DNoqy" }
                 ]
             }
         ]
     });
+

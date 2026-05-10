@@ -1,6 +1,6 @@
 window.courseData = window.courseData || [];
 window.courseData.push({
-        id: 10,
+        id: 15,
         title: "Forense Digital",
         objective: "Coletar e analisar evidências digitais de incidentes com integridade forense e cadeia de custódia.",
         challenges: [
@@ -63,7 +63,9 @@ window.courseData.push({
                 icon: "play-circle",
                 resources: [
                     { id: "for01", title: "Workshops e Masterclasses", channel: "Academia de Forense Digital", desc: "Aulas focadas puramente em perícia forense", url: "https://youtube.com/playlist?list=PLscBKgf46Ju4lPqCcYpsekS7Bs2gI3ZPA&si=f37N_nugSw76NMrm" },
+                    { id: "for02", title: "Perícia Digital e Investigação Online", channel: "Messias Eric", desc: "Fundamentos teóricos e práticos de perícia e rastreamento de dados digitais.", url: "https://youtube.com/playlist?list=PLSVwmQp6yjLSIzChVcFdKEKiBOcXYRhdh&si=HByVdfXdEYR4yt14" }
                 ]
             }
         ]
     });
+

@@ -1,6 +1,6 @@
 window.courseData = window.courseData || [];
 window.courseData.push({
-        id: 8,
+        id: 13,
         title: "Hardening & Defesa",
         objective: "Proteger dispositivos Windows e Linux com hardening, EDR, gestão de patches e controle de aplicações.",
         challenges: [
@@ -55,7 +55,9 @@ window.courseData.push({
         usefulLinks: [
             { title: "CIS Benchmarks", url: "https://www.cisecurity.org/cis-benchmarks/", desc: "Guias de hardening por SO" },
             { title: "Lynis", url: "https://cisofy.com/lynis/", desc: "Auditor de segurança Linux" },
-            { title: "nessus", url: "https://pt-br.tenable.com/products/nessus", desc: "Auditoria de vulnerabilidades" }
+            { title: "nessus", url: "https://pt-br.tenable.com/products/nessus", desc: "Auditoria de vulnerabilidades" },
+            { title: "NVD (NIST)", url: "https://nvd.nist.gov/", desc: "National Vulnerability Database" },
+            { title: "CISA - Patches & Updates", url: "https://www.cisa.gov/news-events/news/understanding-patches-and-software-updates", desc: "Guia sobre a importância de atualizações de software" }
         ],
         sections: [
             {
@@ -74,3 +76,4 @@ window.courseData.push({
             }
         ]
     });
+

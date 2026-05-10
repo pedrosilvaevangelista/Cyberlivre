@@ -1,6 +1,6 @@
 window.courseData = window.courseData || [];
 window.courseData.push({
-        id: 6,
+        id: 0,
         title: "Cultura Hacker",
         objective: "Desenvolver comunicação técnica, redação de relatórios e posicionamento profissional em cibersegurança.",
         challenges: [
@@ -78,3 +78,4 @@ window.courseData.push({
             }
         ]
     });
+

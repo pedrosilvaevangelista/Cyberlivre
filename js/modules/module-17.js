@@ -1,6 +1,6 @@
 window.courseData = window.courseData || [];
 window.courseData.push({
-        id: 17,
+        id: 8,
         title: "Engenharia Social",
         objective: "Compreender e simular ataques de manipulação humana: phishing, pretexting e campanhas de conscientização.",
         challenges: [
@@ -52,7 +52,14 @@ window.courseData.push({
         ],
         usefulLinks: [
             { title: "GoPhish", url: "https://getgophish.com/", desc: "Framework de phishing para treinamento" },
-            { title: "SET Toolkit", url: "https://github.com/trustedsec/social-engineer-toolkit", desc: "Social Engineer Toolkit" }
+            { title: "SET Toolkit", url: "https://github.com/trustedsec/social-engineer-toolkit", desc: "Social Engineer Toolkit" },
+            { title: "Scamwatch", url: "https://www.scamwatch.gov.au/", desc: "Informações sobre golpes e proteção" },
+            { title: "SANS OUCH!", url: "https://www.sans.org/newsletters/ouch", desc: "Newsletter de conscientização em segurança" },
+            { title: "Google Phishing Quiz", url: "https://phishingquiz.withgoogle.com/", desc: "Teste prático para identificar Phishing" },
+            { title: "KnowBe4", url: "https://www.knowbe4.com/", desc: "Treinamento em conscientização de segurança" },
+            { title: "APWG", url: "https://apwg.org/", desc: "Anti-Phishing Working Group" },
+            { title: "CISA - USB Drives", url: "https://www.cisa.gov/news-events/news/using-caution-usb-drives", desc: "Guia de cautela no uso de pen drives" },
+            { title: "Digital Defense", url: "https://digital-defense.io/", desc: "O checklist definitivo para segurança pessoal digital" }
         ],
         sections: [
             {
@@ -66,3 +73,4 @@ window.courseData.push({
             }
         ]
     });
+

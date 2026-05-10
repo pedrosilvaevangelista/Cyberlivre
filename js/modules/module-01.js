@@ -1,6 +1,6 @@
 window.courseData = window.courseData || [];
 window.courseData.push({
-        id: 1,
+        id: 3,
         title: "Sistemas Operacionais",
         objective: "Administrar Windows e Linux no nível do kernel: processos, permissões, logs e automação via shell.",
         challenges: [
@@ -104,3 +104,4 @@ window.courseData.push({
             }
         ]
     });
+

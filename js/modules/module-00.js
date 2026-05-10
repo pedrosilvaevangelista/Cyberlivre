@@ -1,6 +1,6 @@
 window.courseData = window.courseData || [];
 window.courseData.push({
-        id: 0,
+        id: 1,
         title: "Hardware",
         objective: "Dominar a base física dos sistemas: escolha de CPU, GPU, RAM, armazenamento e fontes para cada tipo de workstation.",
         challenges: [
@@ -143,3 +143,4 @@ window.courseData.push({
             }
         ]
     });
+

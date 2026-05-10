@@ -53,7 +53,8 @@ window.courseData.push({
         ],
         usefulLinks: [
             { title: "MalwareBazaar", url: "https://bazaar.abuse.ch/", desc: "Repositório de amostras" },
-            { title: "Any.run", url: "https://any.run/", desc: "Sandbox interativa online" }
+            { title: "Any.run", url: "https://any.run/", desc: "Sandbox interativa online" },
+            { title: "VirusTotal", url: "https://www.virustotal.com/gui/home/upload", desc: "Análise de arquivos, URLs e domínios suspeitos" }
         ],
         sections: [
             {
@@ -65,3 +66,4 @@ window.courseData.push({
             }
         ]
     });
+

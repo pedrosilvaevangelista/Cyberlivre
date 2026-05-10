@@ -1,7 +1,7 @@
 window.courseData = window.courseData || [];
 window.courseData.push(// ─── ESPECIALIZAÇÃO ──────────────────────────────────────────────────────────
     {
-        id: 18,
+        id: 17,
         title: "Cloud Security",
         objective: "Entender riscos, IAM, configuração segura e auditoria de infraestrutura em AWS, Azure e GCP.",
         challenges: [
@@ -73,6 +73,17 @@ window.courseData.push(// ─── ESPECIALIZAÇÃO ─────────
                     { id: "cert_cloud_01", title: "AWS Cloud Practitioner Essentials", channel: "AWS Skill Builder", desc: "Treinamento oficial gratuito da Amazon focado em infraestrutura, governança e responsabilidade compartilhada (com certificado).", url: "https://explore.skillbuilder.aws/learn/course/external/view/elearning/134/aws-cloud-practitioner-essentials" },
                     { id: "cert_cloud_02", title: "Azure Security, Compliance, and Identity", channel: "Microsoft Learn", desc: "Trilha SC-900 oficial ensinando os conceitos de Zero Trust e governança na nuvem da Microsoft.", url: "https://learn.microsoft.com/pt-br/training/paths/describe-concepts-of-security-compliance-identity/" }
                 ]
+            },
+            {
+                name: "Artigos e Leituras (DevSecOps & CI/CD)",
+                icon: "book-open",
+                resources: [
+                    { id: "devsecops_art_01", title: "DevSecOps usando ações do GitHub", channel: "Medium", desc: "Building Secure CI/CD Pipelines.", url: "https://medium.com/@rahulsharan512/devsecops-using-github-actions-building-secure-ci-cd-pipelines-5b6d59acab32" },
+                    { id: "devsecops_art_02", title: "Endurecimento da Segurança de CI/CD", channel: "SpectralOps", desc: "6 etapas para o sucesso com o endurecimento da segurança de CI/CD.", url: "https://spectralops.io/blog/ci-cd-security-hardening/" },
+                    { id: "devsecops_art_03", title: "GitLab CI/CD - Laboratório prático", channel: "GitLab", desc: "Protegendo a varredura em pipelines de CI/CD.", url: "https://handbook.gitlab.com/handbook/customer-success/professional-services-engineering/education-services/gitlabcicdhandsonlab9/" },
+                    { id: "devsecops_art_04", title: "Solução de problemas em Nuvem", channel: "LinkedIn", desc: "Como se manter atualizado com as mais recentes técnicas de solução de problemas em computação em nuvem.", url: "https://www.linkedin.com/advice/1/how-can-you-stay-current-latest-problem-solving-msk5e" }
+                ]
             }
         ]
     });
+
