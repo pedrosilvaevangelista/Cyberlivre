@@ -61,7 +61,8 @@ window.courseData.push({
                 name: "Vídeos e Playlists",
                 icon: "play-circle",
                 resources: [
-                    { id: "sec14", title: "Malwares e Afins", channel: "Douglas Lockshield", desc: "Análise de ameaças", url: "https://youtube.com/playlist?list=PLKXxjimG9Fo3MhbfVE5nsuWznK4oUiSrz" }
+                    { id: "sec14", title: "Malwares e Afins", channel: "Douglas Lockshield", desc: "Análise de ameaças", url: "https://youtube.com/playlist?list=PLKXxjimG9Fo3MhbfVE5nsuWznK4oUiSrz" },
+                    { id: "sec15_jensen", title: "Análise de Malwares", channel: "Jensen Moreira", desc: "Curso e práticas em análise e engenharia reversa de malwares.", url: "https://youtube.com/playlist?list=PLy62H0jz9AipXXMOO23nb29auIb1QWQeu&si=VlzGWCt6R9CA6YZE" }
                 ]
             }
         ]

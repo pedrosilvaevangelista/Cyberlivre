@@ -51,6 +51,21 @@ window.courseData.push({
 </ul>
 <h3>Validação:</h3>
 <p>Tente commitar um arquivo com uma senha em texto claro no seu repositório. O Git deverá rejeitar imediatamente sua ação graças ao Hook que você desenvolveu. Isso é aplicar segurança desde o princípio (Shift-Left).</p>`
+            },
+            {
+                id: "chal-prog-3",
+                title: "Desenvolvimento Web: Boteco do Seu Carlos",
+                desc: "Crie um site completo com HTML, CSS puro e Swiper.js, estruturado para o estabelecimento local, e publique online.",
+                content: `<p><strong>Atividade:</strong> Desenvolvimento Frontend e Deploy</p>
+<p><strong>Cenário:</strong> Seu Carlos é dono de um tradicional boteco localizado na Comunidade do Pantanal, em São Paulo. Com o objetivo de aumentar suas vendas e alcançar mais clientes, ele contratou você para criar a presença digital do estabelecimento. Apresente o melhor que o local tem a oferecer.</p>
+<h3>Tarefas:</h3>
+<ul>
+    <li><strong>Estrutura e conteúdo:</strong> O site deve conter pelo menos as seções: página inicial, cardápio, sobre o boteco e localização/contato. Todas as informações devem ser coerentes com o contexto.</li>
+    <li><strong>Estilização:</strong> A identidade visual deve ser criada do zero, sem uso de frameworks CSS (como Bootstrap ou Tailwind). Utilize variáveis CSS, flexbox e/ou grid.</li>
+    <li><strong>Swiper de cachaças:</strong> Implemente um carrossel utilizando a biblioteca <code>Swiper.js</code> para destacar as melhores cachaças do boteco. Cada slide deve exibir nome, descrição e preço. A navegação entre slides e a paginação são obrigatórias.</li>
+</ul>
+<h3>Validação:</h3>
+<p><strong>Hospedagem:</strong> O site deve estar publicado e acessível online através da plataforma Netlify, de preferência conectado a um repositório no GitHub. Qualquer alteração feita no repositório deve refletir automaticamente no site publicado.</p>`
             }
         ],
         usefulLinks: [

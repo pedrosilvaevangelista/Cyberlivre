@@ -112,7 +112,8 @@ window.courseData.push(// ─── DEFENSIVA ───────────�
                     { id: "sec15", title: "Cybersecurity Teoria e Prática", channel: "Daniel Donda", desc: "Base teórica sólida", url: "https://youtube.com/playlist?list=PLPIvFl3fAVReKTbM4pxgbX7fLSx5RcN12" },
                     { id: "sec16_hrb", title: "Segurança com Prática - Módulo 1", channel: "Hardware Redes Brasil", desc: "Fundamentos práticos de segurança da informação e redes.", url: "https://youtube.com/playlist?list=PLAp37wMSBouB70jGTeT0JjW_LNC_JBHCo&si=aSYrqKUZKc-urDL9" },
                     { id: "sec17_hrb", title: "Segurança com Prática - Módulo 2", channel: "Hardware Redes Brasil", desc: "Continuação avançada das práticas de segurança e defesa de redes.", url: "https://youtube.com/playlist?list=PLAp37wMSBouAr6SdCgSTbAeesW91a201L&si=IYeC1PL1-NFH2NeC" },
-                    { id: "sec18_boson", title: "Segurança e Criptografia", channel: "Bóson Treinamentos", desc: "Conceitos teóricos e algoritmos de criptografia essenciais para segurança.", url: "https://youtube.com/playlist?list=PLucm8g_ezqNred_fII4GzZxMi91PKbney&si=AuT5mBOS1fUQsjvb" }
+                    { id: "sec18_boson", title: "Segurança e Criptografia", channel: "Bóson Treinamentos", desc: "Conceitos teóricos e algoritmos de criptografia essenciais para segurança.", url: "https://youtube.com/playlist?list=PLucm8g_ezqNred_fII4GzZxMi91PKbney&si=AuT5mBOS1fUQsjvb" },
+                    { id: "sec19_yuri", title: "VOCÊ NÃO SABE AUTENTICAÇÃO", channel: "YuriRDev", desc: "Sessões, JWT e Autenticação Segura", url: "https://www.youtube.com/watch?v=vJUjLYmddks" }
                 ]
             },
             {
