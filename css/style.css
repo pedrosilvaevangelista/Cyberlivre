@@ -1510,3 +1510,38 @@ footer .logo-img {
 
     .section-header { margin-bottom: 1.75rem; }
 }
+
+/* ─── VIEW TRANSITIONS API ─────────────────────────────────────────────────── */
+@view-transition {
+    navigation: auto;
+}
+
+::view-transition-old(root),
+::view-transition-new(root) {
+    animation-duration: 0.7s;
+    animation-timing-function: cubic-bezier(0.25, 1, 0.5, 1);
+}
+
+::view-transition-old(root) {
+    animation-name: fade-out, slide-to-left;
+}
+
+::view-transition-new(root) {
+    animation-name: fade-in, slide-from-right;
+}
+
+@keyframes fade-in {
+    from { opacity: 0; }
+}
+
+@keyframes fade-out {
+    to { opacity: 0; }
+}
+
+@keyframes slide-from-right {
+    from { transform: translateX(50px); }
+}
+
+@keyframes slide-to-left {
+    to { transform: translateX(-50px); }
+}
