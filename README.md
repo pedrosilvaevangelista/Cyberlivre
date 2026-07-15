@@ -25,4 +25,4 @@ Você pode colaborar das seguintes formas:
 
 ---
 
-Feito com <3 pela comunidade brasileira de cibersegurança
+Feito com ❤️ pela comunidade brasileira de cibersegurança
