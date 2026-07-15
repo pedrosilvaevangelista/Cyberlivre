@@ -74,7 +74,10 @@ window.courseData.push({
             { title: "Elastic SIEM", url: "https://www.elastic.co/security", desc: "Stack ELK para SOC" },
             { title: "DFIR Iris", url: "https://dfir-iris.org/", desc: "Plataforma de Incident Response" },
             { title: "Sigma Rules", url: "https://github.com/SigmaHQ/sigma", desc: "Formato genérico de assinaturas para SIEM" },
-            { title: "Shuffle", url: "https://shuffler.io/", desc: "Plataforma Open Source de orquestração (SOAR)" }
+            { title: "Shuffle", url: "https://shuffler.io/", desc: "Plataforma Open Source de orquestração (SOAR)" },
+            { title: "Splunk Search Tutorial", url: "https://help.splunk.com/en/splunk-enterprise/search/search-manual/10.4/search-overview/get-started-with-search", desc: "Guia oficial da linguagem SPL (Search Processing Language) para filtrar logs e detectar anomalias em larga escala no Splunk." },
+            { title: "Suricata IDS/IPS - Recursos", url: "https://suricata.io/features/", desc: "Visão geral dos recursos do motor open-source de detecção e prevenção de intrusões em rede (IDS/IPS)." },
+            { title: "Suricata Docs", url: "https://docs.suricata.io/en/latest/index.html", desc: "Documentação técnica oficial do Suricata contendo guias de instalação, configuração e escrita de regras de assinatura de rede." }
         ],
         sections: [
             {

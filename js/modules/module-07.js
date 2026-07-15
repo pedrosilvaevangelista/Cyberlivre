@@ -121,7 +121,9 @@ window.courseData.push(// ─── DEFENSIVA ───────────�
                 icon: "graduation-cap",
                 resources: [
                     { id: "secc01", title: "Introdução à Cibersegurança", channel: "Cisco NetAcad", desc: "Visão geral da área", url: "https://www.netacad.com/pt/courses/introduction-to-cybersecurity" },
-                    { id: "secc03", title: "Cybersecurity Essentials", channel: "Cisco NetAcad", desc: "Fundamentos proteção", url: "https://www.netacad.com/pt/courses/cybersecurity-essentials" }
+                    { id: "secc03", title: "Cybersecurity Essentials", channel: "Cisco NetAcad", desc: "Fundamentos proteção", url: "https://www.netacad.com/pt/courses/cybersecurity-essentials" },
+                    { id: "secc05_harvard", title: "CS50 Cybersecurity (Harvard)", channel: "freeCodeCamp", desc: "Curso completo em vídeo cobrindo fundamentos de segurança da informação, redes, criptografia e análise defensiva. Nota: Em inglês (tradução automática disponível).", url: "https://www.freecodecamp.org/news/learn-cybersecurity-from-harvard-university" },
+                    { id: "secc06_hdb", title: "Curso Hackers do Bem", channel: "MCTI / SENAI", desc: "Formação nacional completa e gratuita em cibersegurança e privacidade de dados, contendo trilhas teóricas, laboratórios práticos e simulados. (Em Português)", url: "https://hackersdobem.org.br/" }
                 ]
             }
         ]

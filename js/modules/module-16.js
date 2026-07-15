@@ -52,9 +52,11 @@ window.courseData.push({
             }
         ],
         usefulLinks: [
-            { title: "MalwareBazaar", url: "https://bazaar.abuse.ch/", desc: "Repositório de amostras" },
+            { title: "MalwareBazaar Browse", url: "https://bazaar.abuse.ch/browse/", desc: "Mecanismo de busca e filtros avançados no banco de dados do MalwareBazaar para localizar famílias específicas de ameaças e amostras de malware." },
             { title: "Any.run", url: "https://any.run/", desc: "Sandbox interativa online" },
-            { title: "VirusTotal", url: "https://www.virustotal.com/gui/home/upload", desc: "Análise de arquivos, URLs e domínios suspeitos" }
+            { title: "VirusTotal", url: "https://www.virustotal.com/gui/home/upload", desc: "Análise de arquivos, URLs e domínios suspeitos" },
+            { title: "urlscan.io", url: "https://urlscan.io/", desc: "Sandbox de análise de sites que renderiza URLs de forma segura, registrando requisições HTTP, conexões, cookies e logs do console para detecção de Phishing." },
+            { title: "Jotti's Malware Scan", url: "https://virusscan.jotti.org/", desc: "Serviço online gratuito para submissão de arquivos suspeitos e varredura simultânea usando múltiplos motores de antivírus." }
         ],
         sections: [
             {

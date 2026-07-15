@@ -342,17 +342,46 @@ body.platform-page {
 /* ─── USEFUL LINKS ─── */
 .links-inline-grid { display: grid; grid-template-columns: 1fr; gap: .75rem; }
 .useful-link-card {
-    background: white; padding: 1rem;
-    border-radius: var(--radius-md);
+    background: white;
+    padding: 1.25rem;
+    border-radius: var(--radius-lg);
     border: 1px solid var(--border);
-    display: flex; justify-content: space-between; align-items: center;
-    text-decoration: none; transition: var(--transition);
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    text-decoration: none;
+    transition: var(--transition);
     -webkit-tap-highlight-color: transparent;
 }
 .useful-link-card:active { transform: scale(0.99); }
-.link-content strong { display: block; font-size: .875rem; color: var(--ink); margin-bottom: 2px; }
-.link-content span { font-size: .72rem; color: var(--ink-3); }
-.useful-link-card i { color: var(--ink-4); width: 1rem; height: 1rem; flex-shrink: 0; margin-left: .5rem; }
+.link-content {
+    flex: 1;
+    padding-right: 0.5rem;
+}
+.link-content strong {
+    display: block;
+    font-size: 0.95rem;
+    font-weight: 800;
+    color: var(--ink);
+    margin-bottom: 6px;
+    line-height: 1.35;
+    transition: color 0.2s ease;
+}
+.link-content span {
+    display: block;
+    font-size: 0.8rem;
+    color: var(--ink-3);
+    line-height: 1.5;
+}
+.useful-link-card i {
+    color: var(--ink-4);
+    width: 1.1rem;
+    height: 1.1rem;
+    flex-shrink: 0;
+    margin-left: 0.5rem;
+    margin-top: 2px;
+    transition: transform 0.2s cubic-bezier(0.4, 0, 0.2, 1), color 0.2s ease;
+}
 
 /* ─── BUTTONS ─── */
 .btn-primary {
@@ -498,11 +527,23 @@ body.platform-page {
     .hero-stats-row { gap: 2.5rem; }
 
     .resource-grid { grid-template-columns: repeat(auto-fill,minmax(300px,1fr)); gap: 1.25rem; }
-    .links-inline-grid { grid-template-columns: repeat(auto-fill,minmax(260px,1fr)); }
+    .links-inline-grid { grid-template-columns: repeat(auto-fill,minmax(320px,1fr)); }
     .resource-card { padding: 1.5rem; }
     .resource-card:hover { transform: translateY(-4px); box-shadow: var(--shadow-md); border-color: var(--indigo-mid); }
     .resource-card.challenge-card:hover { border-color: #ef4444; box-shadow: 0 12px 32px rgba(239,68,68,.14); }
-    .useful-link-card:hover { border-color: var(--indigo); transform: translateY(-2px); box-shadow: var(--shadow-sm); }
+    .useful-link-card:hover {
+        border-color: var(--indigo);
+        transform: translateY(-3px);
+        box-shadow: var(--shadow-md);
+        background: linear-gradient(135deg, #ffffff 0%, #f9faff 100%);
+    }
+    .useful-link-card:hover strong {
+        color: var(--indigo);
+    }
+    .useful-link-card:hover i {
+        transform: translate(3px, -3px);
+        color: var(--indigo);
+    }
 
     .hero-stats-row { display: flex; gap: 2.5rem; text-align: left; }
     .stat-divider { display: block; width: 1px; background: rgba(255,255,255,.08); }

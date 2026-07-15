@@ -130,7 +130,8 @@ window.courseData.push({
                     { id: "h02", title: "Curso Montagem e Manutenção", channel: "Hardware Redes Brasil", desc: "Montagem e manutenção", url: "https://youtube.com/playlist?list=PLAp37wMSBouCBS51KUcd_yNBOzSd4Rby4&si=ocaud6wQHru7F-Yu" },
                     { id: "h03", title: "Hardware na Prática", channel: "MW Informática", desc: "Videos Práticos de Hardware", url: "https://youtube.com/playlist?list=PL968TMGoACSuEiD44jNGIbvQfJo4Lwf3-" },
                     { id: "h04", title: "Hardware Hacking", channel: "penegui", desc: "Videos sobre hardware hacking", url: "https://youtube.com/playlist?list=PLfka6izM9ttCfWU8cFSLw7nMp_X7E4m7T&si=3HKchCC2wSBbzv8R" },
-                    { id: "h05", title: "Mais sobre Hardware Hacking", channel: "Hardware Hacking", desc: "Mais vídeos sobre hardware hacking", url: "https://youtube.com/playlist?list=PLmuhNadVlssg1fkJsQ5m2-gkv6TuRiXsY&si=bS1Rj00qcuh1bqK7" }
+                    { id: "h05", title: "Mais sobre Hardware Hacking", channel: "Hardware Hacking", desc: "Mais vídeos sobre hardware hacking", url: "https://youtube.com/playlist?list=PLmuhNadVlssg1fkJsQ5m2-gkv6TuRiXsY&si=bS1Rj00qcuh1bqK7" },
+                    { id: "h06_cc", title: "Computer Science - CrashCourse", channel: "CrashCourse", desc: "Playlist completa sobre circuitos lógicos, transistores, CPU, história e arquitetura de computadores. Nota: Em inglês (tradução automática de legendas disponível).", url: "https://youtube.com/playlist?list=PL8dPuuaLjXtNlUrzyH5r6jN9ulIgZBpdo&si=yzNqH2BXbrb8vR4y" }
                 ]
             },
             {

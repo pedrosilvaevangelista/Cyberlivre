@@ -103,7 +103,8 @@ window.courseData.push({
                     { id: "pc01", title: "Python Essentials 1", channel: "Cisco NetAcad", desc: "Fundamentos da linguagem", url: "https://www.netacad.com/pt/courses/python-essentials-1" },
                     { id: "pc02", title: "JavaScript Essentials 1", channel: "Cisco NetAcad", desc: "Fundamentos JS", url: "https://www.netacad.com/pt/courses/javascript-essentials-1" },
                     { id: "pc03", title: "HTML Essentials", channel: "Cisco NetAcad", desc: "Estruturação de páginas", url: "https://www.netacad.com/pt/courses/html-essentials" },
-                    { id: "pc04", title: "CSS Essentials", channel: "Cisco NetAcad", desc: "Estilização web", url: "https://www.netacad.com/pt/courses/css-essentials" }
+                    { id: "pc04", title: "CSS Essentials", channel: "Cisco NetAcad", desc: "Estilização web", url: "https://www.netacad.com/pt/courses/css-essentials" },
+                    { id: "pc05_ai", title: "Artificial Intelligence - CrashCourse", channel: "CrashCourse", desc: "Curso completo em vídeo cobrindo o que é inteligência artificial, redes neurais, machine learning, PLN e ética em algoritmos. Nota: Em inglês (tradução automática de legendas disponível).", url: "https://youtube.com/playlist?list=PL8dPuuaLjXtO65LeD2p4_Sb5XQ51par_b&si=roB74KmoDCdReqRr" }
                 ]
             }
         ]

@@ -61,7 +61,7 @@ window.courseData.push({
                 name: "Vídeos e Playlists",
                 icon: "play-circle",
                 resources: [
-                    { id: "crypt01", title: "Criptografia para Segurança", channel: "Daniel Donda", desc: "Fundamentos e aplicações práticas", url: "https://youtube.com/playlist?list=PLPIvFl3fAVReKTbM4pxgbX7fLSx5RcN12" }
+                    { id: "crypt01", title: "Segurança e Criptografia", channel: "Bóson Treinamentos", desc: "Conceitos teóricos e algoritmos de criptografia: criptografia simétrica, assimétrica, hashing, PKI e TLS.", url: "https://youtube.com/playlist?list=PLucm8g_ezqNred_fII4GzZxMi91PKbney&si=AuT5mBOS1fUQsjvb" }
                 ]
             }
         ]

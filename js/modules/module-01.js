@@ -89,7 +89,7 @@ window.courseData.push({
                     { id: "os02", title: "Linux para Iniciantes", channel: "Diolinux", desc: "Conceitos e apresentação do Linux", url: "https://youtube.com/playlist?list=PLZsjaJhVZaxX9xCXhZDJnhFcIL4ncLjVj" },
                     { id: "os03", title: "Curso Linux", channel: "Matheus Battisti", desc: "Linux do básico ao avançado", url: "https://youtube.com/playlist?list=PLnDvRpP8BnezDTtL8lm6C-UOJZn-xzALH&si=NC0HCGsat6By1VOK" },
                     { id: "os04", title: "Windows Server", channel: "Julio Battisti", desc: "Instalação e gerenciamento do Windows Server", url: "https://youtube.com/playlist?list=PLqjSTsK75fSeuSEVCmiP5MkdcNBFRujge" },
-                    { id: "os05", title: "Linux for Hackers (conteudo em inglês)", channel: "NetworkChuck", desc: "Linux Voltado para o hacking", url: "https://youtube.com/playlist?list=PLIhvC56v63IJIujb5cyE13oLuyORZpdkL&si=MgpPbx8JIHSse7iU" }
+                    { id: "os05", title: "Linux for Hackers", channel: "NetworkChuck", desc: "Curso focado em Linux voltado para hacking e segurança da informação. Nota: Em inglês (tradução automática disponível).", url: "https://youtube.com/playlist?list=PLIhvC56v63IJIujb5cyE13oLuyORZpdkL&si=MgpPbx8JIHSse7iU" }
                 ]
             },
             {

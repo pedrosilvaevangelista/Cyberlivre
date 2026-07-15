@@ -55,7 +55,8 @@ window.courseData.push({
                 icon: "play-circle",
                 resources: [
                     { id: "virt01", title: "Virtualização Completa", channel: "Hardware Redes Brasil", desc: "VMs e ambientes isolados", url: "https://youtube.com/playlist?list=PLAp37wMSBouCqJnY-Qck_XDwplEud3ELc" },
-                    { id: "virt02", title: "Docker Para Iniciantes", channel: "Diolinux", desc: "Containerização de aplicações e serviços", url: "https://youtu.be/ntbpIfS44Gw?t" }
+                    { id: "virt02", title: "Docker Para Iniciantes", channel: "Diolinux", desc: "Containerização de aplicações e serviços", url: "https://youtu.be/ntbpIfS44Gw?t" },
+                    { id: "virt03_k8s", title: "Curso Certified Kubernetes Administrator (CKA)", channel: "freeCodeCamp", desc: "Curso completo em vídeo cobrindo a administração e orquestração de containers com Kubernetes. Nota: Em inglês (tradução automática disponível).", url: "https://www.freecodecamp.org/news/prepare-for-the-kubernetes-administrator-certification-and-pass/" }
                 ]
             }
         ]

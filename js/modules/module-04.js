@@ -52,7 +52,8 @@ window.courseData.push({
             }
         ],
         usefulLinks: [
-            { title: "SQLZoo", url: "https://sqlzoo.net/", desc: "Exercícios interativos de SQL" }
+            { title: "SQLZoo", url: "https://sqlzoo.net/", desc: "Exercícios interativos de SQL" },
+            { title: "Generate Data", url: "https://generatedata.com/generator", desc: "Gerador gratuito e altamente configurável de massa de dados falsos (SQL, JSON, CSV) para popular tabelas e testar queries." }
         ],
         sections: [
             {

@@ -71,7 +71,8 @@ window.courseData.push(// ─── ESPECIALIZAÇÃO ─────────
                 icon: "graduation-cap",
                 resources: [
                     { id: "cert_cloud_01", title: "AWS Cloud Practitioner Essentials", channel: "AWS Skill Builder", desc: "Treinamento oficial gratuito da Amazon focado em infraestrutura, governança e responsabilidade compartilhada (com certificado).", url: "https://explore.skillbuilder.aws/learn/course/external/view/elearning/134/aws-cloud-practitioner-essentials" },
-                    { id: "cert_cloud_02", title: "Azure Security, Compliance, and Identity", channel: "Microsoft Learn", desc: "Trilha SC-900 oficial ensinando os conceitos de Zero Trust e governança na nuvem da Microsoft.", url: "https://learn.microsoft.com/pt-br/training/paths/describe-concepts-of-security-compliance-identity/" }
+                    { id: "cert_cloud_02", title: "Azure Security, Compliance, and Identity", channel: "Microsoft Learn", desc: "Trilha SC-900 oficial ensinando os conceitos de Zero Trust e governança na nuvem da Microsoft.", url: "https://learn.microsoft.com/pt-br/training/paths/describe-concepts-of-security-compliance-identity/" },
+                    { id: "cert_cloud_03_azure", title: "Serverless & Microserviços (C# & Azure)", channel: "freeCodeCamp", desc: "Curso completo em vídeo abordando a criação de microsserviços seguros e serverless no Microsoft Azure usando C#. Nota: Em inglês (tradução automática disponível).", url: "https://www.freecodecamp.org/news/serverless-and-microservices-with-c-and-azure/" }
                 ]
             },
             {
