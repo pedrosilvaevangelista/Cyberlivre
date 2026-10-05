@@ -1,0 +1,53 @@
+# ─── NETLIFY CONFIGURATION FOR CYBERLIVRE ───────────────────────────────────
+
+[build]
+  publish = "."
+
+# ─── CABEÇALHOS DE SEGURANÇA GLOBAIS ──────────────────────────────
+[[headers]]
+  for = "/*"
+  [headers.values]
+    # Proteção contra Clickjacking
+    X-Frame-Options = "DENY"
+    # Previne que o navegador tente adivinhar tipos MIME (MIME-Sniffing)
+    X-Content-Type-Options = "nosniff"
+    # Proteção contra XSS em navegadores com suporte
+    X-XSS-Protection = "1; mode=block"
+    # Política de Referrer estrita para privacidade
+    Referrer-Policy = "strict-origin-when-cross-origin"
+    # Força uso perpétuo de HTTPS (HSTS)
+    Strict-Transport-Security = "max-age=31536000; includeSubDomains; preload"
+    # Bloqueia APIs desnecessárias de hardware do dispositivo
+    Permissions-Policy = "geolocation=(), microphone=(), camera=(), payment=()"
+
+# ─── CACHE-CONTROL INTELIGENTE ────────────────────────────────────
+
+# Páginas HTML: sempre revalidam para refletir atualizações na hora (sem cache preso)
+[[headers]]
+  for = "/*.html"
+  [headers.values]
+    Cache-Control = "public, max-age=0, must-revalidate"
+
+# Assets estáticos (imagens, ícones, banners): cache longo de 1 ano
+[[headers]]
+  for = "/assets/*"
+  [headers.values]
+    Cache-Control = "public, max-age=31536000, immutable"
+
+# Folhas de estilo CSS
+[[headers]]
+  for = "/css/*"
+  [headers.values]
+    Cache-Control = "public, max-age=86400, stale-while-revalidate=604800"
+
+# Scripts JavaScript dos módulos e lógica
+[[headers]]
+  for = "/js/*"
+  [headers.values]
+    Cache-Control = "public, max-age=86400, stale-while-revalidate=604800"
+
+# ─── REDIRECIONAMENTOS E ROTA 404 ─────────────────────────────────
+[[redirects]]
+  from = "/*"
+  to = "/404.html"
+  status = 404

@@ -41,6 +41,23 @@ window.courseData.push({
 <p>Defina dois "Volumes" Docker nomeados: um para salvar os dados do MySQL (<code>/var/lib/mysql</code>) e outro para salvar os arquivos do site WordPress (<code>/var/www/html</code>). Sem volumes, todo o site será perdido se os containers reiniciarem.</p>
 <p>Validação: Suba a estrutura com <code>docker-compose up -d</code>. Entre no painel do WordPress, crie uma postagem. Destrua os containers usando <code>docker-compose down</code>. Suba de novo e certifique-se de que sua postagem ainda está lá porque você usou Volumes persistentes corretamente.</p>`,
                 url: "https://docs.google.com/document/d/190S3hVXMLKFyPWP5zy_61YZCl70iJ5RpheqpDIiqP9I/edit?usp=sharing"
+            },
+            {
+                id: "chal-9",
+                title: "Arquitetura Multicamadas com Docker Compose (3 Serviços)",
+                desc: "Orquestre um laboratório completo de 3 camadas isoladas (Proxy, Aplicação e Banco de Dados) via redes internas.",
+                content: `<p><strong>Atividade:</strong> Segmentação de Redes e Infraestrutura como Código (IaC) com Docker</p>
+<p><strong>Cenário:</strong> Em arquiteturas seguras de produção, o banco de dados nunca deve ter suas portas expostas diretamente para a máquina física ou para a internet, e a aplicação deve ser protegida por um proxy reverso.</p>
+<h3>Tarefas:</h3>
+<ul>
+    <li>Crie um arquivo <code>docker-compose.yml</code> estruturando uma arquitetura de 3 serviços interconectados:</li>
+    <li><strong>1. Proxy Reverso (Nginx):</strong> O único serviço com porta mapeada para o seu computador físico (ex: <code>8080:80</code>). Ele receberá as requisições externas e as encaminhará internamente para a aplicação.</li>
+    <li><strong>2. Aplicação Web (ex: OWASP Juice Shop ou DVWA):</strong> Conectada ao Nginx através de uma rede interna bridge chamada <code>frontend_net</code>.</li>
+    <li><strong>3. Banco de Dados (ex: MySQL ou Redis):</strong> Conectado à aplicação através de uma rede isolada chamada <code>backend_net</code>, <strong>sem nenhuma diretiva de portas (ports) mapeadas para o host</strong>.</li>
+    <li>Defina volumes nomeados persistentes para garantir que o banco e os arquivos de configuração do Nginx não se percam ao reiniciar.</li>
+</ul>
+<h3>Validação:</h3>
+<p>Inicie o laboratório com <code>docker compose up -d</code>. Acesse <code>localhost:8080</code> no navegador do seu sistema operacional físico e confirme que a aplicação carrega através do proxy. Em seguida, comprove que a porta do banco de dados está inacessível a partir do seu PC físico, comprovando a eficácia do isolamento de redes no Docker.</p>`
             }
         ],
         usefulLinks: [

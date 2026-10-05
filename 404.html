@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+    <title>404 - Rota Não Encontrada | CyberLivre</title>
+    <link rel="icon" type="image/png" href="assets/img/icon.png">
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Sora:wght@400;600;700;800&family=JetBrains+Mono:wght@500;700&display=swap" rel="stylesheet">
+    
+    <!-- Lucide Icons -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+
+    <style>
+        :root {
+            --bg-black: #050508;
+            --purple-core: #7c3aed;
+            --indigo-core: #4353ff;
+            --cyan-glow: #06b6d4;
+            --text-main: #f3f4f8;
+            --text-muted: #8892b0;
+            --font-display: 'Sora', system-ui, sans-serif;
+            --font-mono: 'JetBrains Mono', monospace;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background-color: var(--bg-black);
+            color: var(--text-main);
+            font-family: var(--font-display);
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            padding: 2rem 1.5rem;
+            position: relative;
+            overflow-x: hidden;
+        }
+
+        /* Subtle Cyber Background Grid */
+        .cyber-grid {
+            position: absolute;
+            inset: 0;
+            background-image: 
+                linear-gradient(rgba(124, 58, 237, 0.05) 1px, transparent 1px),
+                linear-gradient(90deg, rgba(124, 58, 237, 0.05) 1px, transparent 1px);
+            background-size: 40px 40px;
+            pointer-events: none;
+            z-index: 0;
+        }
+
+        /* Ambient Glow behind image */
+        .ambient-glow {
+            position: absolute;
+            width: 450px;
+            height: 450px;
+            background: radial-gradient(circle, rgba(124, 58, 237, 0.22) 0%, rgba(67, 83, 255, 0.1) 50%, transparent 70%);
+            filter: blur(60px);
+            border-radius: 50%;
+            pointer-events: none;
+            z-index: 1;
+            animation: pulse-glow 5s ease-in-out infinite alternate;
+        }
+
+        @keyframes pulse-glow {
+            0% { transform: scale(0.9); opacity: 0.6; }
+            100% { transform: scale(1.15); opacity: 1; }
+        }
+
+        .error-container {
+            position: relative;
+            z-index: 2;
+            max-width: 640px;
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        /* Error Emblem */
+        .error-image-wrapper {
+            position: relative;
+            margin-bottom: 2rem;
+            display: inline-block;
+        }
+
+        .error-img {
+            width: 220px;
+            max-width: 80vw;
+            height: auto;
+            filter: drop-shadow(0 0 25px rgba(124, 58, 237, 0.45));
+            animation: float-slow 4s ease-in-out infinite;
+        }
+
+        @keyframes float-slow {
+            0%, 100% { transform: translateY(0px); }
+            50% { transform: translateY(-10px); }
+        }
+
+
+        h1 {
+            font-size: clamp(2rem, 5vw, 3rem);
+            font-weight: 800;
+            line-height: 1.15;
+            margin-bottom: 1rem;
+            letter-spacing: -0.02em;
+            background: linear-gradient(135deg, #ffffff 40%, #c4b5fd 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        p {
+            font-size: 1.05rem;
+            line-height: 1.6;
+            color: var(--text-muted);
+            margin-bottom: 2.25rem;
+            max-width: 520px;
+        }
+
+        .btn-group {
+            display: flex;
+            gap: 1rem;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+
+        .btn {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            gap: 0.6rem;
+            font-family: var(--font-display);
+            font-size: 0.95rem;
+            font-weight: 700;
+            padding: 0.85rem 1.6rem;
+            border-radius: 12px;
+            text-decoration: none;
+            transition: all 0.25s cubic-bezier(0.4, 0, 0.2, 1);
+            cursor: pointer;
+        }
+
+        .btn-primary {
+            background: linear-gradient(135deg, var(--indigo-core), var(--purple-core));
+            color: #ffffff;
+            border: none;
+            box-shadow: 0 8px 24px rgba(124, 58, 237, 0.35);
+        }
+
+        .btn-primary:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 12px 30px rgba(124, 58, 237, 0.5);
+            filter: brightness(1.1);
+        }
+
+        .btn-secondary {
+            background: rgba(255, 255, 255, 0.04);
+            color: var(--text-main);
+            border: 1px solid rgba(255, 255, 255, 0.12);
+        }
+
+        .btn-secondary:hover {
+            background: rgba(255, 255, 255, 0.08);
+            border-color: rgba(255, 255, 255, 0.25);
+            transform: translateY(-2px);
+        }
+
+        /* Footer brand */
+        .footer-brand {
+            margin-top: 3rem;
+            font-size: 0.85rem;
+            color: rgba(136, 146, 176, 0.6);
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+
+        .footer-brand a {
+            color: var(--text-muted);
+            text-decoration: none;
+            font-weight: 600;
+        }
+
+        .footer-brand a:hover {
+            color: #a855f7;
+        }
+    </style>
+</head>
+<body>
+    <div class="cyber-grid"></div>
+    <div class="ambient-glow"></div>
+
+    <main class="error-container">
+        <div class="error-image-wrapper">
+            <img src="assets/img/error.png" alt="Emblema Cyberlivre Danificado" class="error-img">
+        </div>
+
+
+
+        <h1>Conexão Interrompida</h1>
+        <p>A rota requisitada não existe. Verifique o endereço digitado.</p>
+
+        <div class="btn-group">
+            <a href="index.html" class="btn btn-secondary">
+                <i data-lucide="arrow-left" style="width: 18px; height: 18px;"></i>
+                Página Inicial
+            </a>
+            <a href="course.html" class="btn btn-primary">
+                Acessar Plataforma
+                <i data-lucide="shield" style="width: 18px; height: 18px;"></i>
+            </a>
+        </div>
+
+        <div class="footer-brand">
+            <i data-lucide="terminal" style="width: 15px; height: 15px;"></i>
+            <span>CyberLivre</span>
+        </div>
+    </main>
+
+    <script>
+        if (window.lucide) {
+            lucide.createIcons();
+        }
+    </script>
+</body>
+</html>

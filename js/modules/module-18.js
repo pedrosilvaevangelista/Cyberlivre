@@ -51,11 +51,31 @@ window.courseData.push(// ─── ESPECIALIZAÇÃO ─────────
 </ul>
 <h3>Validação:</h3>
 <p>O LocalStack é o laboratório supremo e 100% gratuito para Engenheiros Cloud. Demonstre que o arquivo antes acessível pelo emulador agora retorna o clássico erro "Access Denied" (Erro 403).</p>`
+            },
+            {
+                id: "chal-cloud-3",
+                title: "Caça a Segredos Vazados (TruffleHog) e Git Pre-Commit Hook",
+                desc: "Descubra credenciais esquecidas no histórico do Git e configure barreiras automáticas para bloquear commits inseguros.",
+                content: `<p><strong>Atividade:</strong> Prevenção de Vazamento de Credenciais na Esteira de Desenvolvimento</p>
+<p><strong>Cenário:</strong> A maior causa de invasões em nuvem é o vazamento acidental de chaves de API, credenciais AWS e tokens de banco de dados commitados em repositórios de código.</p>
+<h3>Tarefas:</h3>
+<ul>
+    <li>Crie um repositório Git local de teste. Crie um arquivo contendo uma chave de API fictícia simulada (ex: uma chave falsa no formato AWS <code>AKIAIOSFODNN7EXAMPLE</code>).</li>
+    <li>Faça o commit desse arquivo. Em seguida, simule um desenvolvedor desatento que tenta corrigir o erro: delete o arquivo e faça um novo commit dizendo "removendo chave". (A chave continua salva no histórico do Git!).</li>
+    <li>Instale a ferramenta open-source <a href="https://github.com/trufflesecurity/trufflehog" target="_blank">TruffleHog</a> ou <strong>Gitleaks</strong> no seu terminal.</li>
+    <li>Execute a varredura profunda no repositório: <code>trufflehog git file://. --only-verified=false</code> e comprove como a ferramenta recupera a chave apagada diretamente dos commits antigos.</li>
+    <li>Instale o framework open-source <strong>pre-commit</strong> (<code>pip install pre-commit</code>) e crie um arquivo <code>.pre-commit-config.yaml</code> adicionando o hook do Gitleaks ou TruffleHog.</li>
+    <li>Instale o hook no repositório com <code>pre-commit install</code>.</li>
+</ul>
+<h3>Validação:</h3>
+<p>Tente commitar propositalmente um novo arquivo contendo um token de API simulado. O Git deve interceptar e abortar a operação antes que o commit seja gravado, protegendo a empresa antes do push para o GitHub.</p>`
             }
         ],
         usefulLinks: [
             { title: "AWS Security Hub", url: "https://aws.amazon.com/security-hub/", desc: "Central de segurança AWS" },
-            { title: "Prowler", url: "https://github.com/prowler-cloud/prowler", desc: "Auditor open source de cloud" }
+            { title: "Prowler", url: "https://github.com/prowler-cloud/prowler", desc: "Auditor open source de cloud" },
+            { title: "TruffleHog", url: "https://github.com/trufflesecurity/trufflehog", desc: "Scanner open-source para encontrar credenciais em repositórios Git" },
+            { title: "Gitleaks", url: "https://github.com/gitleaks/gitleaks", desc: "Auditor e pre-commit hook para proteção de segredos" }
         ],
         sections: [
             {

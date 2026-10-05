@@ -66,6 +66,24 @@ window.courseData.push({
 </ul>
 <h3>Validação:</h3>
 <p><strong>Hospedagem:</strong> O site deve estar publicado e acessível online através da plataforma Netlify, de preferência conectado a um repositório no GitHub. Qualquer alteração feita no repositório deve refletir automaticamente no site publicado.</p>`
+            },
+            {
+                id: "chal-prog-4",
+                title: "Arsenal Próprio: Port Scanner Multithread em Python",
+                desc: "Desenvolva uma ferramenta de varredura de portas com captura de banners utilizando apenas a biblioteca padrão do Python.",
+                content: `<p><strong>Atividade:</strong> Criação de Ferramentas de Reconhecimento de Rede (Socket Programming)</p>
+<p><strong>Cenário:</strong> Em auditorias de segurança e testes de intrusão, você frequentemente acessa servidores restritos onde o Nmap não está instalado e você não tem privilégios para instalar novos pacotes. Ter seu próprio scanner em Python é uma habilidade fundamental.</p>
+<h3>Tarefas:</h3>
+<ul>
+    <li>Crie um script Python chamado <code>scanner.py</code> utilizando apenas módulos nativos da biblioteca padrão (<code>socket</code>, <code>threading</code> ou <code>concurrent.futures</code>, e <code>sys</code>) — sem dependências externas.</li>
+    <li>O script deve receber como argumentos via linha de comando o IP ou hostname do alvo e o intervalo de portas a ser escaneado (ex: <code>python scanner.py 127.0.0.1 20 100</code>).</li>
+    <li>Implemente timeouts curtos (ex: <code>0.5s</code> a <code>1.0s</code>) em cada conexão TCP para evitar que o script fique travado aguardando portas filtradas por firewall.</li>
+    <li>Utilize concorrência (threads) para escanear dezenas de portas simultaneamente de forma rápida.</li>
+    <li><strong>Banner Grabbing:</strong> Se uma porta estiver aberta (ex: 21, 22 ou 80), o script deve enviar um pequeno payload de teste (como <code>b"HEAD / HTTP/1.0\\r\\n\\r\\n"</code>) e capturar a resposta textual inicial retornada pelo serviço para identificar a versão do software em execução.</li>
+    <li>Exiba a saída formatada de forma limpa no terminal indicando: Porta, Estado (Aberta/Fechada) e Serviço/Banner identificado.</li>
+</ul>
+<h3>Validação:</h3>
+<p>Execute seu scanner contra uma máquina virtual local ou contra o alvo público autorizado para testes <code>scanme.nmap.org</code>. Documente o tempo de execução e os banners capturados no README do seu repositório de ferramentas no GitHub.</p>`
             }
         ],
         usefulLinks: [
