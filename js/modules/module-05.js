@@ -109,7 +109,7 @@ window.courseData.push({
                 name: "Scripts",
                 icon: "terminal",
                 resources: [
-                    { id: "p07", title: "Shell Scripting", channel: "Bóson Treinamentos", desc: "Automação Linux", url: "https://youtube.com/playlist?list=PLlucm8g_ezqNrYgjXC8_CgbvHbvI7dDfhs" },
+                    { id: "p07", title: "Shell Scripting", channel: "Bóson Treinamentos", desc: "Automação Linux", url: "https://youtube.com/playlist?list=PLucm8g_ezqNrYgjXC8_CgbvHbvI7dDfhs&si=dDlLg_L3voAasMPa" },
                     { id: "p08", title: "PowerShell Fundamentos", channel: "Instituto de Script's", desc: "Automação Windows", url: "https://youtube.com/playlist?list=PLO_mlVzHgDw3EIKrT5rma_rmC4Lcc7ihT" },
                     { id: "p11", title: "Git e GitHub", channel: "Dev Aprender", desc: "Controle de versão", url: "https://youtu.be/kB5e-gTAl_s" }
                 ]
