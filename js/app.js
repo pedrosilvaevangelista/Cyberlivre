@@ -27,7 +27,7 @@ const curriculumModules = [
 Promise.all(curriculumModules.map(src => {
     return new Promise((resolve, reject) => {
         const script = document.createElement('script');
-        script.src = src;
+        script.src = src + '?v=4';
         script.onload = resolve;
         script.onerror = reject;
         document.body.appendChild(script);
